@@ -1,0 +1,25 @@
+{
+  "name": "cadvance.next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "debounce": "^1.2.0",
+    "jquery": "^3.4.1",
+    "mermaid": "^8.4.8",
+    "next": "^9.3.4",
+    "now": "^18.0.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-scrollspy": "^3.4.2",
+    "reactstrap": "^8.4.1",
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,10 @@
+nav#nav {
+flex-grow: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+}
+
+li.is-current a {
+  color:red;
+}

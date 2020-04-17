@@ -1,0 +1,91 @@
+/* #region scroll spy contents part */
+div#scrollContent.scroll-content {
+  margin-top: calc(#{$navbar_height} - 0.5em);
+  margin-left: 0;
+  margin-right: $spyCol-width;
+  margin-bottom: 1em;
+  background-color: $transparent;
+  // overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 8;
+  width: 100% - $spyCol-width;
+  font-family: $noto-sans-kr;
+  font-size: 1em;
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  padding: 0 $navbar_height $navbar_height $navbar_height;
+  flex: 83.333333%;
+  max-width: 83.333333;
+  @include archi-border-main();
+
+  // height: 100vh;
+  hr {
+    @include archi-border-main();
+    // border-image-outset: 8px 8px 0 8px;
+    background-color: transparent;
+    // border: 3px solid transparent;
+    border-width: 0 5px 6px 5px;
+  }
+
+  div.align-center {
+    display: flex;
+    align-content: center;
+  }
+
+  section {
+    margin-top: 1em;
+    margin-bottom: 1000px;
+
+    // .normal-wrap {
+    //   text-align-last: left;
+    // }
+
+    .normal-wrap .normal-wrap {
+      margin-left: 1em;
+    }
+
+    p,
+    p.lead {
+      font-size: 1rem;
+      font-family: $main-para-font;
+      font-weight: 300;
+      word-wrap: none;
+      word-break: normal;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+        line-height: 1.8;
+      }
+
+      li::before {
+        font-family: $awesome;
+        color: $danger;
+        content: "\f105";
+        font-weight: bold;
+        // width: 0.5em;
+        // height: 0.5em;
+        // border: 1px solid $white;
+        // box-shadow: 2px 1px 4px $gray-500;
+        // border-radius: 50%;
+        display: inline-block;
+        // background-color: $danger;
+        // vertical-align: middle;
+        margin-right: 0.5em;
+        // margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* #endregion scroll spy contents part */

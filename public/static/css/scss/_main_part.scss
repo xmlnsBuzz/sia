@@ -1,0 +1,17 @@
+/* #region main part */
+main#main.main {
+  /*  */
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  width: 1200px;
+  // top: 3px;
+  position: relative;
+  // height: calc(100vh - #{$navbar-height});
+  // position: relative;
+  // border: medium solid red;
+  // background-color: $gray;
+}
+
+/* #endregion main part */

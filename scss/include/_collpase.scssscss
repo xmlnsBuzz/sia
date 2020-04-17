@@ -1,0 +1,85 @@
+.Coll-container {
+  width: 100%;
+}
+
+.Collapsible {
+  background-color: white;
+  position: relative;
+}
+
+.Collapsible a {
+  display: block;
+}
+
+.Collapsible__contentInner {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 0;
+  border-top: 0;
+}
+
+.Collapsible__contentInner p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Collapsible__contentInner p:last-child {
+  margin-bottom: 0;
+}
+
+// .Collapsible__trigger {
+//   display: flex;
+//   font-weight: 400;
+//   text-decoration: none;
+//   color: #333333;
+//   position: relative;
+//   border: 1px solid #ccc;
+//   border-width: 1px 0;
+//   padding: 10px;
+//   background-color: $partial-bgcolor;
+//   color: black;
+// }
+
+// .Collapsible__trigger>.Collapsible__trigger {
+//   margin-right: 0;
+//   margin-left: auto;
+// }
+
+// .Collapsible__trigger:after {
+//   content: url('../public/img/down_arrow_black.svg');
+//   width: 16px;
+//   height: 16px;
+//   position: absolute;
+//   right: 10px;
+//   top: 10px;
+//   display: block;
+//   transition: transform 400ms;
+//   transform-origin: 50% 80%;
+// }
+
+// .Collapsible__trigger.is-open:after {
+//   transform: rotateZ(180deg);
+//   transform-origin: 50% 80%;
+// }
+
+// .Collapsible__trigger.is-disabled {
+//   opacity: 0.5;
+//   background-color: grey;
+// }
+
+// .CustomTriggerCSS {
+//   background-color: lightcoral;
+//   transition: background-color 200ms ease;
+// }
+
+// .CustomTriggerCSS--open {
+//   background-color: darkslateblue;
+// }
+
+// .Collapsible__custom-sibling {
+//   padding: 5px;
+//   font-size: 12px;
+//   background-color: #CBB700;
+//   color: black;
+// }

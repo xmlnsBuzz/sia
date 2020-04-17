@@ -1,0 +1,49 @@
+import React from 'react';
+
+class FontMain extends React.Component {
+  render () {
+    return (
+      <main id="main" className="main row">
+        <!-- /* NOTE 이 근처를 건드리면 드롭다운이 안된다. */ -->
+        <div id="scrollContent" className="scroll-content col-lg-10">
+          <section id="about">
+            <div className="normal-wrap">
+              <p className="align-center">
+                <h1>Fonts Property</h1>
+              </p>
+              <hr />
+              <h2></h2>
+              <p className="lead"></p>
+              /* 하위 컨텐츠가 있으면 normal-wrap class로 감쌀 것 */
+              <div className="normal-wrap">
+                <h3>Heading 3</h3>
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+        <section id="scrollSpy" class="scroll-spy">
+          <div className="container text-center">
+            <div className="bookmark-header">
+              <a className="navbar-brand js-scroll-trigger" href="#page-top">{/* <i
+          class="fad fa-bookmark fa-2x align-middle text-success"></i>&nbsp;&nbsp;&nbsp; */}문서제목 들어갈 곳</a>
+            </div>
+
+            <nav className="collapse navbar-collapse text-left overflow-scroll">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </main>
+    )
+  }
+}
+
+export default FontMain;

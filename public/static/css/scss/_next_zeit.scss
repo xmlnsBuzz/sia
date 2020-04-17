@@ -1,0 +1,14 @@
+/* #region next and zeit */
+#icon-wrapper,
+#__next-prerender-indicator,
+#__next-prerender-indicator > *,
+#__next-build-watcher,
+#shadow-root {
+  display: none;
+  visibility: hidden;
+}
+
+div#container.visible {
+  display: none;
+}
+/* #endregion next and zeit */

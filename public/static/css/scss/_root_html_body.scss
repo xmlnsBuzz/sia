@@ -1,0 +1,29 @@
+/* #region root, html, body and etc...  */
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+}
+
+html,
+body {
+  font-family: $noto-sans-kr;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  // font-family: "Noto Sans Kr";
+  box-sizing: border-box;
+  position: relative;
+  // scroll-behavior: smooth;
+}
+
+pre > code {
+  font-family: $fira-code;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: $gray-dark;
+}
+
+/* #endregion root and html, body */

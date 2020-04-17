@@ -1,0 +1,45 @@
+@mixin font-property-inherit() {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+@mixin font-property-initial() {
+  font-size: initial;
+  font-weight: initial;
+  font-family: initial;
+  line-height: initial;
+}
+
+@mixin archi-border-dropdown() {
+  background-color: $transparent;
+  border: 7px solid $transparent;
+  border-image: url('../../img/border-image-orange-26x26-tick-6px.png') 7 round;
+}
+
+@mixin archi-border() {
+  background-color: $gray-100;
+  border: 8px solid $transparent;
+  border-image: url('../../img/border-box-orange-main.png') 7 round;
+  // box-shadow: 
+  // 1px 1px 5px $gray-400;
+}
+
+@mixin archi-divider() {
+  // background-color: $transparent;
+  border: 1px solid $transparent;
+  border-image: url('../../img/h-divider-line.png') 1 round;
+}
+
+@mixin archi-border-main() {
+  // background-color: $transparent;
+  border: 9px solid $transparent;
+  border-image: url('../../img/border-box-27x27.png') 9 repeat;
+}
+
+@mixin archi-border-title() {
+  background-color: $gray-150;
+  border: 9px solid $transparent;
+  border-image: url('../../img/border-box-999-222.png') 9 repeat;
+}

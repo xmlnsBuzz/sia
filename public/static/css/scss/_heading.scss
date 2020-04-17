@@ -1,0 +1,42 @@
+/* #region heading */
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  display: inline-block;
+  font-family: $fira-sans-xcond;
+  @include archi-border();
+}
+
+h1 {
+  @include archi-border();
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h2:not(:first-child) {
+  margin: 1em 0;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-weight: 500;
+  margin-top: $navbar_height - 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+h3,
+h4 {
+  margin-top: 1em 0;
+}
+
+/* #endregion heading */

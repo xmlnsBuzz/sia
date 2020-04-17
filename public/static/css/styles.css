@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,regular,500,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light:regular");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two:regular");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,regular,500,600,700,900");
+/* #region root, html, body and etc...  */
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+}
+
+html,
+body {
+  font-family: "Noto Sans Kr";
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+pre > code {
+  font-family: "Fira Code";
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #343a40;
+}
+
+/* #endregion root and html, body */
+/* #region heading */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  display: inline-block;
+  font-family: "Fira Sans Extra Condensed";
+  background-color: #f8f9fa;
+  border: 8px solid transparent;
+  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
+     border-image: url("../../img/border-box-orange-main.png") 7 round;
+}
+
+h1 {
+  background-color: #f8f9fa;
+  border: 8px solid transparent;
+  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
+     border-image: url("../../img/border-box-orange-main.png") 7 round;
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h2:not(:first-child) {
+  margin: 1em 0;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-weight: 500;
+  margin-top: 3em;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+h3,
+h4 {
+  margin-top: 1em 0;
+}
+
+/* #endregion heading */
+/* #region header dropdown button navigation */
+#navbarCollapse {
+  background-color: #2e2e2e;
+}
+
+header#header.header {
+  width: 100%;
+  display: block;
+  height: 5em;
+  font-family: "Noto Sans Kr";
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+header#header.header nav.navbar {
+  z-index: 30000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 5em;
+  background-color: #2e2e2e !important;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse {
+  color: inherit;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  /* header search form */
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse > a.navbar-brand {
+  color: #ffc107;
+  margin-left: 1em;
+  font-family: "Shadows Into Light Two";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav {
+  color: inherit;
+  /* 일반 아이템과 드롭다운 아이템 공통적용부분 */
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown {
+  margin: 0 0.5rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link {
+  cursor: pointer;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item .nav-link,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item .nav-link.dropdown-toggle,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown .nav-link,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown .nav-link.dropdown-toggle {
+  background-color: transparent;
+  border: 7px solid transparent;
+  -o-border-image: url("../../img/border-image-orange-26x26-tick-6px.png") 7 round;
+     border-image: url("../../img/border-image-orange-26x26-tick-6px.png") 7 round;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.dropdown-toggle,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.dropdown-toggle {
+  font-size: 0.8rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.dropdown-toggle:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.dropdown-toggle:hover {
+  font-size: 0.8rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.disabled,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.disabled:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link.disabled,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link.disabled:hover {
+  color: #6c757d;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link {
+  color: #f8f9fa;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link:hover {
+  color: #fd7e14;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+  border-radius: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: #ffffffee;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-style: solid;
+  padding: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item li.dropdown-item:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item li.dropdown-item:hover {
+  font-size: 0.8rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  line-height: 2.2;
+  font-weight: 500;
+  padding: 0 1em;
+  color: #000000;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item a:hover {
+  background-color: #ffa961ee;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:active,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item a:active {
+  color: #ffffff;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item.dropdown.show,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item.dropdown.show {
+  font-size: 0.75rem;
+  background-color: #dee2e6;
+  font-weight: 700;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline {
+  padding: 0;
+  font-size: 14px;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline input.form-control {
+  padding-top: 2px;
+  margin-bottom: 0;
+  font-size: 14px;
+  height: 35px;
+  border-radius: 4px 0 0 4px;
+  margin-right: 0 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline button.btn {
+  font-size: 14px;
+  border-radius: 0 4px 4px 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  color: #61af73;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline button.btn:hover {
+  background-color: #61af73;
+  color: white;
+}
+
+/* #endregion header dropdown button navigation */
+/* #region main part */
+main#main.main {
+  /*  */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+}
+
+/* #endregion main part */
+/* #region scroll spy contents part */
+div#scrollContent.scroll-content {
+  margin-top: calc(5em - 0.5em);
+  margin-left: 0;
+  margin-right: calc(210px - 2 * 1em);
+  margin-bottom: 1em;
+  background-color: transparent;
+  overflow-y: auto;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  width: 100%-calc(210px - 2 * 1em);
+  font-family: "Noto Sans Kr";
+  font-size: 1em;
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 5em 5em 5em;
+  -webkit-box-flex: 83.333333%;
+      -ms-flex: 83.333333%;
+          flex: 83.333333%;
+  max-width: 83.333333;
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+}
+
+div#scrollContent.scroll-content hr {
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+  background-color: transparent;
+  border-width: 0 5px 6px 5px;
+}
+
+div#scrollContent.scroll-content div.align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+div#scrollContent.scroll-content section {
+  margin-top: 1em;
+  margin-bottom: 1000px;
+}
+
+div#scrollContent.scroll-content section .normal-wrap .normal-wrap {
+  margin-left: 1em;
+}
+
+div#scrollContent.scroll-content section p,
+div#scrollContent.scroll-content section p.lead {
+  font-size: 1rem;
+  font-family: "Noto Serif KR";
+  font-weight: 300;
+  word-wrap: none;
+  word-break: normal;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+div#scrollContent.scroll-content section ul li {
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+div#scrollContent.scroll-content section ul li::before {
+  font-family: "Font Awesome 5 Pro";
+  color: #e92d40;
+  content: "\f105";
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+/* #endregion scroll spy contents part */
+/* #region scroll spy navigation part */
+section#scrollSpy.scroll-spy {
+  width: calc(210px - 2 * 1em);
+  position: fixed;
+  margin-top: calc(5em - 0.5em);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  right: calc((100vw - 1200px) / 2);
+  overflow-y: auto;
+  height: 100%;
+  font-family: "Shadows Into Light Two";
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+}
+
+section#scrollSpy.scroll-spy div.container {
+  padding: 0;
+}
+
+section#scrollSpy.scroll-spy div.container a.navbar-brand.js-scroll-trigger {
+  font-family: "Shadows Into Light Two";
+  display: block;
+  background-color: #dee2e6;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #f8f9fa;
+  border: 8px solid transparent;
+  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
+     border-image: url("../../img/border-box-orange-main.png") 7 round;
+}
+
+section#scrollSpy.scroll-spy div.container > a {
+  text-align: center;
+}
+
+section#scrollSpy.scroll-spy div.container .collapse.navbar-collapse {
+  line-height: 1.3;
+  display: block;
+}
+
+section#scrollSpy.scroll-spy div.container .collapse.navbar-collapse ul ul {
+  padding-left: 10px;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item {
+  color: #6c757d;
+  list-style-type: none;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a {
+  color: #343a40;
+  line-height: 2;
+  padding: 0 1em;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a.nav-link.js-scroll-trigger {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a.nav-link.js-scroll-trigger:hover {
+  color: #007bff;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a.nav-link.js-scroll-trigger.active {
+  color: #e92d40;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a.nav-link.js-scroll-trigger.active::after {
+  -webkit-animation: bookmark 1s infinite cubic-bezier(0.23, 1, 0.32, 1);
+          animation: bookmark 1s infinite cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: "Font Awesome 5 Pro";
+  color: #e92d40;
+  content: "\f060";
+  font-size: 12px;
+  margin-left: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+@-webkit-keyframes bookmark {
+  from {
+    left: -10px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes bookmark {
+  from {
+    left: -10px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+/* #endregion scroll spy navigation part */
+/* #region sorttable table */
+table.sortable {
+  border-collapse: collapse;
+  font-family: "Fira Sans Extra Condensed";
+}
+
+table.sortable .center {
+  text-align: center;
+}
+
+table.sortable thead {
+  background-color: #dee2e6;
+}
+
+table.sortable thead tr th {
+  border-bottom: 1px solid #ced4da;
+  border-top: 1px solid #ced4da;
+  border-right: 1px solid #adb5bd;
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.9rem;
+  cursor: pointer;
+  line-height: 2;
+}
+
+table.sortable thead tr th:last-child {
+  border-right: 0;
+}
+
+table.sortable tbody {
+  font-family: san-serif;
+}
+
+table.sortable tbody tr:hover {
+  background-color: #fff7e1;
+  cursor: default;
+}
+
+table.sortable tbody tr th {
+  border-right: 1px solid #ced4da;
+  border-bottom: 1px solid #dee2e6;
+}
+
+table.sortable tbody tr th a {
+  font-weight: normal;
+  font-size: 0.75em;
+}
+
+table.sortable tbody tr td {
+  border-right: 1px solid #ced4da;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 5px;
+}
+
+table.sortable tbody tr td:last-child {
+  border-right: 0;
+}
+
+/* #endregion sorttable table */
+/* #region media query */
+@media (min-width: 767px) {
+  .navbar .dropdown-toggle:not(.nav-link)::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5em;
+    vertical-align: 0;
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    border-left: 0.3em solid;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* #endregion media query */
+/* #region Gantt Graph */
+#output {
+  color: #0d54d8;
+}
+
+#theGraph {
+  font-size: 1rem;
+  font-family: "Fira Sans Extra Condensed";
+  color: #10863d;
+  font-weight: 300;
+  width: 100%;
+}
+
+#theGraph span.edgeLabel {
+  background-color: #f8f9fa;
+  color: red;
+}
+
+#theGraph rect.label-container {
+  stroke: #777777;
+  stroke-width: 2px;
+  color: #0058db !important;
+}
+
+#theGraph .edgePath .path {
+  stroke: #804d00;
+  stroke-width: 1px;
+}
+
+/* #endregion Gantt Graph */
+/* #region next and zeit */
+#icon-wrapper,
+#__next-prerender-indicator,
+#__next-prerender-indicator > *,
+#__next-build-watcher,
+#shadow-root {
+  display: none;
+  visibility: hidden;
+}
+
+div#container.visible {
+  display: none;
+}
+
+/* #endregion next and zeit */

@@ -1,0 +1,42 @@
+  .markdown {
+    font-family: $heading-font;
+    width: 100%;
+  }
+
+  .markdown a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  .markdown a:hover {
+    opacity: 0.6;
+  }
+
+  .markdown h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-variant: petite-caps;
+  }
+
+  .markdown h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-transform: small-caps;
+  }
+
+  .markdown table {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .markdown th {
+    border: 1px solid red;
+  }
+
+  .markdown td {
+    border: 1px solid red;
+  }
+  

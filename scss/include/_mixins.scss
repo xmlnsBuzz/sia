@@ -1,0 +1,11 @@
+@mixin heading {
+  font-weight: normal;
+  font-family: $header-font;
+}
+
+@mixin paragraph {
+  padding-left: 1em;
+  margin-bottom: 2em;
+  font-weight: 300;
+  font-family: $para-font;
+}
