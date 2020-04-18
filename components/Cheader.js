@@ -18,7 +18,7 @@ class Cheader extends React.Component {
       
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="/"><i className="fad fa-house"></i> Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/"><i class="fas fa-home"></i> Home <span className="sr-only">(current)</span></a>
               </li>
 
               {/*  */}
@@ -34,7 +34,7 @@ class Cheader extends React.Component {
               {/*  */}
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fas fa-code"></i>&nbsp;HTML</a>
+                <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-html5"></i>&nbsp;HTML</a>
                 <ul className="dropdown-menu" aria-labelledby="html">
                   <li className="dropdown-item"><a href="#">Action 2 A</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 B</a></li>
