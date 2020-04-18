@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/img/favicon/logo192.png" />
           {/* <link rel="manifest" href="/img/favicon/manifest.json" /> */}
           <link rel="stylesheet" href="/static/css/bootstrap-4.1.3.min.css" />
-          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+          {/* <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" /> */}
           {/* <link href="/static/css/navbar.css" rel="stylesheet" /> */}
           {/* <link href="/static/css/scrolling-nav.css" rel="stylesheet" /> */}
           <link rel="stylesheet" href="/static/css/vs2015.css" />
