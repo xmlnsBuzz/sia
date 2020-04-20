@@ -217,7 +217,8 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:hover,
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item a:hover {
-  background-color: #ffa961ee;
+  background-color: #6c757d;
+  color: #f8f9fa;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:active,
