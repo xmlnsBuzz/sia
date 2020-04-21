@@ -39,7 +39,7 @@
 }
 
 @mixin archi-border-title() {
-  background-color: $gray-150;
+  background-color: $gray-100;
   border: 9px solid $transparent;
   border-image: url('../../img/border-box-999-222.png') 9 repeat;
 }

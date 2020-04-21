@@ -1,21 +1,32 @@
 import React from 'react';
 import Head from 'next/head';
 import Cheader from '../components/Cheader';
-import Cmain from '../components/Cmain';
+import index_C from './index_C';
+import index_N from './index_N';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from './docs/DocsVariables';
 
-
-class Home extends React.Component {
+class index extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title>Full Stack WebDev - SIA</title>
+          <title>FullStack WebDev Front Page</title>
         </Head>
         <Cheader />
-        <Cmain />
+
+        <main id={MainId} className={MainClass}>
+          <div id={ScrollContentId} className={ScrollContentClass}>
+            <div className={NormalWrapClass}>
+              <index_C />
+            </div>
+          </div>
+          <section id={ScrollSpyId} className={ScrollSpyClass}>
+           <index_N />
+          </section>
+        </main>
       </React.Fragment>
     )
   }
 }
 
-export default Home;
+export default index;

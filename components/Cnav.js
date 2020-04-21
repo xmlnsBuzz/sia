@@ -5,9 +5,7 @@ class Cnav extends React.Component {
     return (
       <section id="scrollSpy" className="scroll-spy">
         <div className="container text-center">
-          <div className="bookmark-header">
-            <a className="navbar-brand js-scroll-trigger" href="#page-top">Page <i className="fad fa-arrow-alt-to-top text-danger"></i> Top </a>
-          </div>
+
           <nav className="collapse navbar-collapse text-left overflow-scroll">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
