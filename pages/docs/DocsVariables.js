@@ -5,3 +5,7 @@ export const ScrollContentClass = 'scroll-content col-lg-10';
 export const NormalWrapClass = 'normal-wrap';
 export const ScrollSpyId = 'scrollSpy';
 export const ScrollSpyClass = 'scroll-spy';
+
+export default function DocsVariables () {
+    return null;
+};

@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.11/mermaid.css" />
           <link rel="stylesheet" href="/static/css/styles.css" />
         </Head>
-        <body id="page-top" className="scrollspy">
+        <body id="scrollSpy" className="scrollspy">
           <Main />
           <NextScript />
           <script type="text/javascript" src="/static/js/jquery-3.4.1.slim.min.js"></script>

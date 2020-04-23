@@ -8,7 +8,7 @@
       target = target.length ? target : $('[id=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top + 156)
+          scrollTop: (target.offset().top + 180)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#scrollSpy',
-    offset: 156
+    offset: 180
   });
 
 })(jQuery); // End of use strict

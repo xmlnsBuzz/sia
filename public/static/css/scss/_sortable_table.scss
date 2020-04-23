@@ -4,7 +4,9 @@ table.sortable {
   border-collapse: collapse;
   font-family: $fira-sans-xcond;
   // table-layout: fixed;
-
+caption {
+  color: $success;
+}
   .center {
     text-align: center;
   }

@@ -37,12 +37,20 @@ pre > code {
   background-color: #343a40;
 }
 
+.alt-image-r {
+  font-size: 64px;
+}
+
+.alt-image-l {
+  font-size: 64px;
+}
+
 /* #endregion root and html, body */
 /* #region heading */
 h1,
 h2,
 h3 {
-  font-weight: normal;
+  font-weight: 600;
   display: inline-block;
   font-family: "Fira Sans Extra Condensed";
   background-color: #f8f9fa;
@@ -52,31 +60,23 @@ h3 {
 }
 
 h1 {
-  background-color: #f8f9fa;
-  border: 8px solid transparent;
-  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
-     border-image: url("../../img/border-box-orange-main.png") 7 round;
   display: inline-block;
   padding: 0.5rem;
   margin: 0 auto;
-  text-align: center;
   font-weight: 600;
   font-size: 2em;
 }
 
-h2:not(:first-child) {
-  margin: 1em 0;
-  font-size: 1.6em;
+h2:first-of-type {
+  margin-top: 1em;
 }
 
 h2 {
-  font-weight: 500;
-  margin-top: 3em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.4em;
-  font-weight: 300;
+  font-size: 1.2em;
 }
 
 h3,
@@ -303,6 +303,7 @@ div#scrollContent.scroll-content {
       -ms-flex: 83.333333%;
           flex: 83.333333%;
   max-width: 83.333333;
+  padding-bottom: 500px;
   border: 9px solid transparent;
   -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
      border-image: url("../../img/border-box-27x27.png") 9 repeat;
@@ -326,7 +327,7 @@ div#scrollContent.scroll-content div.align-center {
 
 div#scrollContent.scroll-content section {
   margin-top: 1em;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
 }
 
 div#scrollContent.scroll-content section .normal-wrap .normal-wrap {
@@ -336,19 +337,21 @@ div#scrollContent.scroll-content section .normal-wrap .normal-wrap {
 div#scrollContent.scroll-content section p,
 div#scrollContent.scroll-content section p.lead {
   font-size: 1rem;
-  font-family: "Noto Serif KR";
+  font-family: "Noto Sans KR";
   font-weight: 300;
   word-wrap: none;
   word-break: normal;
   display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  margin: 1em 0;
+  font-weight: 300;
+}
+
+div#scrollContent.scroll-content section p.lead:first-of-type {
+  margin-top: 0em;
+}
+
+div#scrollContent.scroll-content section p.lead:last-of-type {
+  margin-bottom: 2em;
 }
 
 div#scrollContent.scroll-content section ul li {
@@ -417,6 +420,10 @@ section#scrollSpy.scroll-spy div.container .collapse.navbar-collapse ul ul {
   padding-left: 10px;
 }
 
+section#scrollSpy.scroll-spy div.container li {
+  list-style-type: none;
+}
+
 section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item {
   color: #6c757d;
   list-style-type: none;
@@ -482,6 +489,10 @@ section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-ite
 table.sortable {
   border-collapse: collapse;
   font-family: "Fira Sans Extra Condensed";
+}
+
+table.sortable caption {
+  color: #61af73;
 }
 
 table.sortable .center {

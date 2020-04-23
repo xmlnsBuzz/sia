@@ -17,7 +17,7 @@ class Cnav extends React.Component {
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
               </li>
-               {/* <li>
+               <li>
                 <ul>
                   <li className="nav-item">
                     <a className="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -26,7 +26,7 @@ class Cnav extends React.Component {
                     <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
                   </li>
                 </ul>
-              </li> */}
+              </li>
             </ul>
           </nav>
         </div>

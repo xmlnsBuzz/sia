@@ -18,7 +18,7 @@ class Cheader extends React.Component {
       
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="/"><i class="fas fa-home"></i> Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/"><i className="fas fa-home"></i> Home <span className="sr-only">(current)</span></a>
               </li>
 
               {/*  */}
@@ -70,7 +70,7 @@ class Cheader extends React.Component {
               {/* css dropdown */}
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Main menu" data-placement="top"><i className="fab fa-css3"></i> CSS 3
+                <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Main menu" data-placement="top"><i className="fab fa-css3"></i> CSS Level 3
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="css">
                   
@@ -90,8 +90,8 @@ class Cheader extends React.Component {
                       
                     </ul>
                   </li>
-                  <li className="dropdown-item">
-                    <a href="/docs/css/font/Fonts">font Property</a>
+                  <li className="dropdown-item" disabled>
+                    <a href="/docs/css/font/Fonts" >font Property</a>
                   </li>
                 </ul>
               </li>
