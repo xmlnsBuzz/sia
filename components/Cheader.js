@@ -15,7 +15,7 @@ class Cheader extends React.Component {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <img className="head-logo" src="/img/favicon/favicon-32x32.png" alt="favicon" title="homepage" />
             <a className="navbar-brand" href="/">&nbsp; Full Stack <span className="text-danger" title="Stack It All">SIA</span></a>
-      
+
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="/"><i className="fas fa-home"></i> Home <span className="sr-only">(current)</span></a>
@@ -34,7 +34,7 @@ class Cheader extends React.Component {
               {/*  */}
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-html5"></i>&nbsp;HTML</a>
+                <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fab fa-html5"></i>&nbsp;HTML</a>
                 <ul className="dropdown-menu" aria-labelledby="html">
                   <li className="dropdown-item"><a href="#">Action 2 A</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 B</a></li>
@@ -73,7 +73,8 @@ class Cheader extends React.Component {
                 <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Main menu" data-placement="top"><i className="fab fa-css3"></i> CSS Level 3
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="css">
-                  
+
+                  {/* #region font menu start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="font" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Font Level 3
@@ -84,12 +85,22 @@ class Cheader extends React.Component {
                         </a>
                       </li>
                       <li className="dropdown-item">
+                        <a href="/docs/css/font/FontStyle">font-style
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/font/FontFamily">font-family
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
                         <a href="/docs/css/font/FontSize">font-size
                         </a>
                       </li>
-                      
+
                     </ul>
                   </li>
+                  {/* #endregion font menu start */}
+
                   <li className="dropdown-item" disabled>
                     <a href="/docs/css/font/Fonts" >font Property</a>
                   </li>

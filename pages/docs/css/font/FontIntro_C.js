@@ -61,11 +61,11 @@ class FontIntro_C extends React.Component {
             <h2 id="intro_fontTable">Font properties table</h2>
             <p className="lead">아래의 표는 font관련 property들을 나열한 것이다. 내가 일일히 정성껏 만든 것은 아니고, W3C CSS spec에서 복사했다. 이 표에 익숙한 사람과 그렇지 않은 사람이 있을텐데, CSS를 꽤 안다는 사람도 'Values'에 해당되는 값들은 대개 해석이 불가할 것이다.</p>
 
-            <p className="lead">세상에는 '앞에 놓고도 뭔지 모를 지식'과 '알려주기만 하면 단번에 알 수 있는 지식'이 있다. 그런데 W3C spec 중에 CSS spec은 몇 가지 기본적 방밥을 알면 모든 CSS spec을 스스로 해독할 수 있는 수준이라 본다. 즉, value에 사용된 기호만 이해하면 나머지는 저절로 해독할 수 있는데, 그 기호라는 것이 몇 개 되지 않는다.  이 채널의 목적 중 하나는 W3C CSS spec table을 해독할 수 있는 지식을 제공하는 것이다. 한발 한발 서서히 나아가다 보면 점차 익숙해 질 것이다. </p>
-            <table class="sortable">
+            <p className="lead">세상에는 '앞에 놓고 하루종일 설명해줘도 알기 힘든 지식'과 '귀띔만 해줘도 단번에 알 수 있는 지식'이 있다. 그리고 W3C spec 중 CSS spec은 몇 가지 기본적 방법만 알면 모든 CSS spec을 스스로 해독할 수 있는 수준이라 본다. 즉, value에 사용된 기호만 이해하면 나머지는 저절로 해독할 수 있는데, 그 기호라는 것이 몇 개 되지 않을 뿐더러 고난이도가 아니다. 물론 처음엔 좀 헛갈리겠지만... 이 채널의 목적 중 하나는 W3C CSS spec table을 스스로 해독할 수 있는 지식을 제공하는 것이다. 한발 한발 서서히 나아가다 보면 점차 익숙해 질 것이다. </p>
+            <table className="sortable">
               <caption>W3C Spec에서 복사함.</caption>
               <thead>
-                <tr>
+                <tr title="Click to sort">
                   <th style={{ width: '16%' }}>Property</th>
                   <th>Values</th>
                   <th>Initial</th>
@@ -77,7 +77,10 @@ class FontIntro_C extends React.Component {
               </thead>
               <tbody>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font">font</a>
+                  <th>
+                    <a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font">
+                      font
+                    </a>
                   </th>
                   <td>[ [ &lt;‘font-style’&gt; || &lt;font-variant-css21&gt; ||
                   &lt;‘font-weight’&gt; || &lt;‘font-stretch’&gt; ]?

@@ -1,19 +1,26 @@
 /* #region sorttable table */
-
 table.sortable {
   border-collapse: collapse;
   font-family: $fira-sans-xcond;
-  // table-layout: fixed;
-caption {
-  color: $success;
-}
+  width: 100%;
+
+  caption {
+    color: $success;
+    font-size: 0.9rem;
+    padding-bottom: 0;
+    background-color: $gray-100;
+    caption-side: top;
+  }
+
   .center {
     text-align: center;
   }
 
   thead {
     background-color: $gray-300;
+
     tr {
+
       th {
         border-bottom: 1px solid $gray-400;
         border-top: 1px solid $gray-400;
@@ -33,23 +40,23 @@ caption {
 
   tbody {
     font-family: san-serif;
+
     tr {
-      
-      
       &:hover {
         background-color: lighten($warning, 25%);
         cursor: default;
       }
 
-      
       th {
         border-right: 1px solid $gray-400;
         border-bottom: 1px solid $gray-300;
+
         a {
           font-weight: normal;
           font-size: 0.75em;
         }
       }
+
       td {
         border-right: 1px solid $gray-400;
         border-bottom: 1px solid $gray-300;

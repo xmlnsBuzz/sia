@@ -489,10 +489,15 @@ section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-ite
 table.sortable {
   border-collapse: collapse;
   font-family: "Fira Sans Extra Condensed";
+  width: 100%;
 }
 
 table.sortable caption {
   color: #61af73;
+  font-size: 0.9rem;
+  padding-bottom: 0;
+  background-color: #f8f9fa;
+  caption-side: top;
 }
 
 table.sortable .center {
