@@ -12,6 +12,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,regular,500,600,700,900");
+/* font mixins */
+/* border mixins */
+/* list marker mixins */
 /* #region root, html, body and etc...  */
 :root {
   -webkit-font-smoothing: antialiased;
@@ -25,6 +28,8 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  background-image: url("/img/ancient-symbols-set.svg");
+  background-attachment: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -109,6 +114,7 @@ header#header.header nav.navbar {
           align-items: stretch;
   height: 5em;
   background-color: #2e2e2e !important;
+  border-bottom: medium solid #6c757d;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse {
@@ -177,7 +183,9 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover,
-header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link:hover {
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link:focus,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link:hover,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link:focus {
   color: #fd7e14;
 }
 
@@ -192,11 +200,16 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item,
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item {
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 1px solid #efefef;
   border-style: solid;
   padding: 0;
   padding: 0;
   font-size: 0.8rem;
+}
+
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item li.dropdown-item:first-child,
+header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item li.dropdown-item:first-child {
+  border-top: 1px solid #efefef;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item li.dropdown-item:hover,
@@ -217,7 +230,7 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:hover,
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item a:hover {
-  background-color: #6c757d;
+  background-color: #fd7e14;
   color: #f8f9fa;
 }
 
@@ -229,7 +242,7 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item.dropdown.show,
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.dropdown-item.dropdown.show {
   font-size: 0.75rem;
-  background-color: #dee2e6;
+  background-color: #ffa961ee;
   font-weight: 700;
 }
 
@@ -255,11 +268,12 @@ header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline bu
   background-color: transparent;
   -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-  color: #61af73;
+  color: #ffa961ee;
+  border-color: #ffa961ee;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline button.btn:hover {
-  background-color: #61af73;
+  background-color: #ffa961ee;
   color: white;
 }
 
@@ -304,6 +318,7 @@ div#scrollContent.scroll-content {
           flex: 83.333333%;
   max-width: 83.333333;
   padding-bottom: 500px;
+  background-color: #fff;
   border: 9px solid transparent;
   -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
      border-image: url("../../img/border-box-27x27.png") 9 repeat;
@@ -354,18 +369,92 @@ div#scrollContent.scroll-content section p.lead:last-of-type {
   margin-bottom: 2em;
 }
 
-div#scrollContent.scroll-content section ul li {
+div#scrollContent.scroll-content section ul.red li {
   list-style-type: none;
   line-height: 1.8;
+  margin: 0.5em 0;
+  display: inline-block;
 }
 
-div#scrollContent.scroll-content section ul li::before {
+div#scrollContent.scroll-content section ul.red li::before {
+  line-height: 1.8em;
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 2px 1px 4px #adb5bd;
+          box-shadow: 2px 1px 4px #adb5bd;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dc3545;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-bottom: 2px;
+  list-style-position: outside;
+}
+
+div#scrollContent.scroll-content section ul.green li {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+div#scrollContent.scroll-content section ul.green li::before {
+  line-height: 1.8em;
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 2px 1px 4px #adb5bd;
+          box-shadow: 2px 1px 4px #adb5bd;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #28a745;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-bottom: 2px;
+  list-style-position: outside;
+}
+
+div#scrollContent.scroll-content section ul.blue li {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+div#scrollContent.scroll-content section ul.blue li::before {
+  line-height: 1.8em;
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 2px 1px 4px #adb5bd;
+          box-shadow: 2px 1px 4px #adb5bd;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #007bff;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-bottom: 2px;
+  list-style-position: outside;
+}
+
+ul.arrow li {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+ul.arrow li::before {
   font-family: "Font Awesome 5 Pro";
   color: #e92d40;
   content: "\f105";
   font-weight: bold;
-  display: inline-block;
   margin-right: 0.5em;
+  margin-bottom: 2px;
 }
 
 /* #endregion scroll spy contents part */
@@ -379,7 +468,7 @@ section#scrollSpy.scroll-spy {
           flex: 1 0 auto;
   right: calc((100vw - 1200px) / 2);
   overflow-y: auto;
-  height: calc(100vh - 5em - 0.5em);
+  min-height: calc(100vh - 5em - 0.5em);
   font-family: "Shadows Into Light Two";
   letter-spacing: 2px;
   font-weight: bold;
@@ -495,9 +584,8 @@ table.sortable {
 table.sortable caption {
   color: #61af73;
   font-size: 0.9rem;
-  padding-bottom: 0;
+  margin-bottom: 1em;
   background-color: #f8f9fa;
-  caption-side: top;
 }
 
 table.sortable .center {
@@ -580,6 +668,22 @@ table.sortable tbody tr td:last-child {
 }
 
 /* #endregion media query */
+.normal, .italic, .oblique {
+  font-family: serif;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique 40deg;
+}
+
 /* #region Gantt Graph */
 #output {
   color: #0d54d8;

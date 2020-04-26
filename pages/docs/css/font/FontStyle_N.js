@@ -16,6 +16,9 @@ class FontStyle_N extends React.Component {
                 <a className="nav-link js-scroll-trigger" href="#Styling">Styling</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#Synonym">Synonym</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#FontStyle">font-style</a>
               </li>
               <li className="nav-item">

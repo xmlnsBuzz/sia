@@ -8,7 +8,7 @@ section#scrollSpy.scroll-spy {
   flex: 1 0 auto;
   right: calc((100vw - 1200px) / 2);
   overflow-y: auto;
-  height: calc(100vh - #{$navbar_height} - 0.5em);
+  min-height: calc(100vh - #{$navbar_height} - 0.5em);
   font-family: $font-button-and-title-two;
   letter-spacing: 2px;
   font-weight: bold;

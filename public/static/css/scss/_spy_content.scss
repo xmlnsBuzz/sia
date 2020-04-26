@@ -21,9 +21,12 @@ div#scrollContent.scroll-content {
   flex: 83.333333%;
   max-width: 83.333333;
   padding-bottom: 500px;
+  background-color: #fff;
   @include archi-border-main();
 
   // height: 100vh;
+
+
   hr {
     @include archi-border-main();
     // border-image-outset: 8px 8px 0 8px;
@@ -61,37 +64,70 @@ div#scrollContent.scroll-content {
       font-weight: 300;
     }
 
-    p.lead:first-of-type{
+    p.lead:first-of-type {
       margin-top: 0em;
     }
+
     p.lead:last-of-type {
       margin-bottom: 2em;
     }
 
-    ul {
+    ul.red {
       li {
-        list-style-type: none;
-        line-height: 1.8;
+        @include color-list-item();
       }
 
       li::before {
-        font-family: $awesome;
-        color: $danger;
-        content: "\f105";
-        font-weight: bold;
-        // width: 0.5em;
-        // height: 0.5em;
-        // border: 1px solid $white;
-        // box-shadow: 2px 1px 4px $gray-500;
-        // border-radius: 50%;
-        display: inline-block;
-        // background-color: $danger;
-        // vertical-align: middle;
-        margin-right: 0.5em;
-        // margin-bottom: 2px;
+        // font-family: $awesome;
+        // color: $danger;
+        // content: "\f105";
+        // font-weight: bold;
+        @include color-list-marker($white, $gray-500, $red);
+      }
+    }
+
+    ul.green {
+      li {
+        @include color-list-item();
+      }
+
+      li::before {
+        // font-family: $awesome;
+        // color: $danger;
+        // content: "\f105";
+        // font-weight: bold;
+        @include color-list-marker($white, $gray-500, $green);
+      }
+    }
+
+    ul.blue {
+      li {
+        @include color-list-item();
+      }
+
+      li::before {
+        // font-family: $awesome;
+        // color: $danger;
+        // content: "\f105";
+        // font-weight: bold;
+        @include color-list-marker($white, $gray-500, $blue);
       }
     }
   }
 }
+
+    ul.arrow {
+      li {
+        @include color-list-item();
+      }
+
+      li::before {
+        // font-family: $awesome;
+        // color: $danger;
+        // content: "\f105";
+        // font-weight: bold;
+        @include arrow-marker($danger, bold);
+      }
+    }
 
 /* #endregion scroll spy contents part */

@@ -18,6 +18,9 @@ header#header.header {
     align-items: stretch;
     height: 5em;
     background-color: #2e2e2e !important;
+    // box-sizing: border-box;
+    border-bottom: medium solid $gray-600;
+
 
     div.collapse.navbar-collapse {
       color: inherit;
@@ -25,7 +28,7 @@ header#header.header {
       letter-spacing: 0.5px;
       // font-stretch: expanded;
 
-      > a.navbar-brand {
+      >a.navbar-brand {
         color: $yellow;
         margin-left: 1em;
         font-family: $font-button-and-title-two;
@@ -63,12 +66,15 @@ header#header.header {
             @include archi-border-dropdown();
             // padding: .3rem .3rem;
           }
+
           a.dropdown-toggle {
             font-size: 0.8rem;
           }
+
           a.dropdown-toggle:hover {
             font-size: 0.8rem;
           }
+
           a.nav-link.disabled,
           a.nav-link.disabled:hover {
             color: $gray;
@@ -78,7 +84,8 @@ header#header.header {
             color: $light;
           }
 
-          a.nav-link:hover {
+          a.nav-link:hover,
+          a.nav-link:focus {
             color: $orange;
           }
 
@@ -91,11 +98,15 @@ header#header.header {
 
             li.dropdown-item {
               cursor: pointer;
-              border: 1px solid transparent;
+              border: 1px solid #efefef;
               border-style: solid;
               padding: 0;
               padding: 0;
               font-size: 0.8rem;
+
+              li.dropdown-item:first-child {
+                border-top: 1px solid #efefef;
+              }
 
               li.dropdown-item:hover {
                 font-size: 0.8rem;
@@ -112,7 +123,7 @@ header#header.header {
               }
 
               a:hover {
-                background-color: $gray-600;
+                background-color: $orange;
                 color: $gray-100;
               }
 
@@ -123,9 +134,9 @@ header#header.header {
 
             li.dropdown-item.dropdown.show {
               font-size: 0.75rem;
-              background-color: $gray-300;
+              background-color: $orange-t;
               font-weight: 700;
-                          }
+            }
           }
         }
       }
@@ -153,12 +164,13 @@ header#header.header {
           background-color: transparent;
           transition: background-color 0.25s ease-in-out,
             color 0.25s ease-in-out;
-          color: $success;
+          color: $orange-t;
+          border-color: $orange-t;
           // @include archi-border-dropdown();
         }
 
         button.btn:hover {
-          background-color: $success;
+          background-color: $orange-t;
           color: white;
         }
       }

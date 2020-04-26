@@ -16,8 +16,8 @@ class FontIntro_C extends React.Component {
             <p className="lead">Font에 대한 정보를 찾고자 웹서핑을 하다보면 가끔 'Typeface'라는 말이 나온다. 이 단어는 주로 종이인쇄나 시각디자인을 전문으로 하는 사람들이 사용하는데, 하나의 페이지를 디자인하는데 사용되는 여러가지 글꼴들을 모두 포함하여 typeface라 부른다. 쉽게 말해 방탄소년단의 'Map of the soul 7'은 typeface이고 그 앨범에 포함된 'Persona'는 하나의 글꼴(font-family)인 셈이다. 하지만 이런 것들에 대한 구분없이 마구잡이로 만드는 웹문서에는 이런 구분이 별 의미없을지 모르겠다. </p>
 
             <p className="lead">그렇지만 이런 것들과 상관없이 시각디자인에서 사용하는 'Typography'라는 용어가 있다. 이 단어는 좁은 의미에서는 위의 typeface와 비슷하지만 typography는 글꼴 외에도 'image', 'icon' 등 여러가지 디자인적 요소를 포함한다는 점으로 구별할 수 있다. 우리가 개발하는 웹페이지도 'typography' 수준이 되도록 하면 좋을텐데... 아래의 이미지는 'typography'의 중요성을 상기시켜주는 좋은 예이다.</p>
-            <p className="lead">아카데미상 시상식에서 잘못된 typogrphy 덕분에 페이 더너웨이 아지매가 여우주연상을 'La la land'에게 수여하게 되는 해프닝에서 사용된 typo card를 수정 전과 후로 본 것이다. 보다시피</p>
-            <ul>
+            <p className="lead">아카데미상 시상식에서 잘못된 typogrphy 덕분에 페이 더너웨이 아지매가 여우주연상을 'La la land'에게 수여하게 되는 해프닝이 벌어지는데, 그 때 사용된 typo card를 수정 전과 후로 본 것이다. 보다시피</p>
+            <ul className="arrow">
               <li>before에서는 'EMMA STONE'과 'LA LA LAND'를 같은 굵기로 표현하여 양쪽을 모두 강조(highlight)하여, 정작 어떤 글자가 여우주연상 이름인지 헛갈리게 했고</li>
               <li>after는 누가 보더라도'EMMA STONE'이 한 눈에 들어오도록 했다.</li>
             </ul>  <p className="lead">
@@ -41,7 +41,7 @@ class FontIntro_C extends React.Component {
               </div>
               <div style={{ both: 'clear' }} className="normal-wrap">
                 <h3 id="intro_sansSerifs">Sans Serifs (고딕체:Gothic)</h3>
-                <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Sans KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>暗夕心</aside>각 획의 굵기가 일정한 글꼴이다. 대표적인 google font로는 Roboto, Open Sans, Lato, Monserrat 등의 영문폰트가 있고 한글은 Noto Sans Kr, Nanum Gothic 등이 있다. 윈도우 OS 글꼴 중 Arial, 돋움체 등이 여기에 해당된다.</p>
+                <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Sans KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>暗夕體</aside>각 획의 굵기가 일정한 글꼴이다. 대표적인 google font로는 Roboto, Open Sans, Lato, Monserrat 등의 영문폰트가 있고 한글은 Noto Sans Kr, Nanum Gothic 등이 있다. 윈도우 OS 글꼴 중 Arial, 돋움체 등이 여기에 해당된다.</p>
                 <p className="lead">그 밖에 손으로 쓴 느낌의 필기체(cursive), coding에 주로 사용되는 고정폭(monospace or fixed-width), 어디에도 얽매이지 않고 틀에서 벗어난 '멋대로체'(display) 등이 있다.</p>
               </div>
               <h2 id="intro_fontStyle" className="clearfix">글꼴의 기울기 :   font-style</h2>
@@ -54,8 +54,8 @@ class FontIntro_C extends React.Component {
             </div>
             <h2 id="intro_fontWeight">글자굵기 : font-weight</h2>
             <p className="lead">글자굵기를 다루는 font-weight property는 대개 글자를 굵게 만드는 bold체라고 생각하는 경우가 많다. 하지만 반대로 font-weight는 폰트를 가늘게 만들기도 한다. 굵기를 조절하는 값 또는 keyword들은 아래와 같다.</p>
-            <code>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600
-            | 700 | 800 | 900</code>
+            <pre><code>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600
+            | 700 | 800 | 900</code></pre>
             <p className="lead">그러나 이런 값들을 온전히 지원하는 브라우저는 없다. 그 중 mozilla firefox가 가장 많은 값을 지원해 주긴 하지만 다 해주지는 않는다. 하지만 이 문제는 브라우저가 아닌 google variable font를 사용하여, 모두는 아닐지라도 거의 만족할 만큼의 값들을 사용하므로써 해결할 수 있는데, 이 것에 대한 논의는 각각의 property들을 다루는 문서들에서 하기로 하고 이 문서는 여기서 끝맺는다.</p>
 
             <h2 id="intro_fontTable">Font properties table</h2>
@@ -78,7 +78,7 @@ class FontIntro_C extends React.Component {
               <tbody>
                 <tr>
                   <th>
-                    <a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font">
+                    <a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font">
                       font
                     </a>
                   </th>
@@ -94,7 +94,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-family">font-family</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-family">font-family</a>
                   </th>
                   <td>[ &lt;family-name&gt; | &lt;generic-family&gt; ]#</td>
                   <td>depends on user agent</td>
@@ -104,7 +104,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-feature-settings">font-feature-settings</a>
                   </th>
                   <td>normal | &lt;feature-tag-value&gt;#</td>
@@ -115,7 +115,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-kerning">font-kerning</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-kerning">font-kerning</a>
                   </th>
                   <td>auto | normal | none</td>
                   <td>auto</td>
@@ -125,7 +125,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a>
                   </th>
                   <td>&lt;absolute-size&gt; | &lt;relative-size&gt; |
                 &lt;length-percentage&gt;</td>
@@ -136,7 +136,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust">font-size-adjust</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust">font-size-adjust</a>
                   </th>
                   <td>none | &lt;number&gt;</td>
                   <td>none</td>
@@ -146,7 +146,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-stretch">font-stretch</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-stretch">font-stretch</a>
                   </th>
                   <td>normal | ultra-condensed | extra-condensed | condensed |
                   semi-condensed | semi-expanded | expanded | extra-expanded |
@@ -158,7 +158,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-style">font-style</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-style">font-style</a>
                   </th>
                   <td>normal | italic | oblique</td>
                   <td>normal</td>
@@ -168,7 +168,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-synthesis">font-synthesis</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-synthesis">font-synthesis</a>
                   </th>
                   <td>none | [ weight || style ]</td>
                   <td>weight style</td>
@@ -178,7 +178,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant">font-variant</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant">font-variant</a>
                   </th>
                   <td>normal | none | [ &lt;common-lig-values&gt; ||
                   &lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; ||
@@ -195,7 +195,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-caps">font-variant-caps</a>
                   </th>
                   <td>normal | small-caps | all-small-caps | petite-caps | all-petite-caps
@@ -207,7 +207,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-east-asian">font-variant-east-asian</a>
                   </th>
                   <td>normal | [ &lt;east-asian-variant-values&gt; ||
@@ -219,7 +219,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-ligatures">font-variant-ligatures</a>
                   </th>
                   <td>normal | none | [ &lt;common-lig-values&gt; ||
@@ -232,7 +232,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-numeric">font-variant-numeric</a>
                   </th>
                   <td>normal | [ &lt;numeric-figure-values&gt; ||
@@ -245,7 +245,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property"
+                  <th><a className="property"
                     href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-position">font-variant-position</a>
                   </th>
                   <td>normal | sub | super</td>
@@ -256,7 +256,7 @@ class FontIntro_C extends React.Component {
                   <td>visual</td>
                 </tr>
                 <tr>
-                  <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-weight">font-weight</a>
+                  <th><a className="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-weight">font-weight</a>
                   </th>
                   <td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600
                 | 700 | 800 | 900</td>

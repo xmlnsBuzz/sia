@@ -10,7 +10,7 @@ class FontStyle extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>font-style Property</title>
         </Head>
         <Cheader />
 

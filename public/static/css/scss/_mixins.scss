@@ -1,3 +1,4 @@
+/* font mixins */
 @mixin font-property-inherit() {
   font-size: inherit;
   font-weight: inherit;
@@ -12,6 +13,8 @@
   line-height: initial;
 }
 
+
+/* border mixins */
 @mixin archi-border-dropdown() {
   background-color: $transparent;
   border: 7px solid $transparent;
@@ -42,4 +45,38 @@
   background-color: $gray-100;
   border: 9px solid $transparent;
   border-image: url('../../img/border-box-999-222.png') 9 repeat;
+}
+
+/* list marker mixins */
+
+@mixin color-list-item() {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+@mixin color-list-marker($border, $border-shadow, $bgcolor) {
+  line-height: 1.8em;
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid $border;
+  box-shadow: 2px 1px 4px $border-shadow;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: $bgcolor;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-bottom: 2px;
+  list-style-position: outside;
+}
+
+@mixin arrow-marker($color, $weight){
+  font-family: $awesome;
+  color: $color;
+  content: "\f105";
+  font-weight: $weight;
+  margin-right: 0.5em;
+  margin-bottom: 2px;
 }

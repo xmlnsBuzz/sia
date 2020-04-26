@@ -7,9 +7,10 @@ table.sortable {
   caption {
     color: $success;
     font-size: 0.9rem;
-    padding-bottom: 0;
+    // padding-bottom: 0;
+    margin-bottom: 1em;
     background-color: $gray-100;
-    caption-side: top;
+    // caption-side: top;
   }
 
   .center {

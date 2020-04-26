@@ -70,7 +70,7 @@ class Cheader extends React.Component {
               {/* css dropdown */}
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Main menu" data-placement="top"><i className="fab fa-css3"></i> CSS Level 3
+                <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3" data-placement="top"><i className="fab fa-css3"></i> CSS Level 3
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="css">
 
@@ -80,7 +80,7 @@ class Cheader extends React.Component {
                       Font Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="font">
-                      <li className="dropdown-item">
+                      <li className="dropdown-item" title="CSS font Property 소개">
                         <a href="/docs/css/font/FontIntro">Introduction to font
                         </a>
                       </li>
@@ -151,7 +151,7 @@ class Cheader extends React.Component {
 
             <form className="form-inline mt-2 mt-md-0">
               <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button className="btn btn-outline-orange my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
         </nav>
