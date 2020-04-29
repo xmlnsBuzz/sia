@@ -22,11 +22,25 @@ body {
 }
 
 pre > code {
-  font-family: $fira-code;
-  font-size: 14px;
-  border-radius: 6px;
+  font-family: $ibm-plex-mono;
+  font-size: 0.8rem;
+  // border-radius: 6px;
   background-color: $gray-dark;
+  @include archi-border-code();
 }
+pre {
+  font-family: $ibm-plex-mono;
+  font-size: 0.8rem;
+  // border-radius: 6px;
+  background-color: $gray-dark;
+  @include archi-border-code();
+}
+
+pre > code::selection {
+  background-color: $orange-t;
+}
+
+/////// NOTE pre code는 vs2015.scss의 .hljs class에서 다룰 것.
 
 .alt-image-r {
   font-size: 64px;

@@ -19,3 +19,4 @@ class Fonts extends React.Component {
 }
 
 export default Fonts;
+

@@ -10,13 +10,21 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   padding: 0.5em;
   background-color: #f8f9fa;
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-box-999-222.png") 9 repeat;
-     border-image: url("../../img/border-box-999-222.png") 9 repeat;
+  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
+     border-image: url("../../img/border-image-green.png") 9 repeat;
   background: #e4e4e4;
   color: #111111;
   font-weight: normal;
   font-size: 14px;
   font-family: "Ibm Plex Mono";
+}
+
+*::-moz-selection {
+  background-color: #ffa961ee;
+}
+
+*::selection {
+  background-color: #ffa961ee;
 }
 
 /* Gray DOCTYPE selectors like WebKit */

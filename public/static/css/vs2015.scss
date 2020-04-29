@@ -8,13 +8,18 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  @include archi-border-title();
+  @include archi-border-code();
   background: #e4e4e4;
   color: #111111;
   font-weight: normal;
   font-size: 14px;
   font-family: $ibm-plex-mono;
 }
+
+*::selection {
+  background-color: $orange-t;
+}
+
 
 /* Gray DOCTYPE selectors like WebKit */
 .xml .hljs-meta {

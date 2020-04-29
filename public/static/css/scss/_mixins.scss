@@ -47,13 +47,18 @@
   border-image: url('../../img/border-box-999-222.png') 9 repeat;
 }
 
-/* list marker mixins */
+@mixin archi-border-code() {
+  background-color: $gray-100;
+  border: 9px solid $transparent;
+  border-image: url('../../img/border-image-green.png') 9 repeat;
+}
 
+/* list marker mixins */
 @mixin color-list-item() {
   list-style-type: none;
   line-height: 1.8;
   margin: 0.5em 0;
-  display: inline-block;
+  display: block;
 }
 
 @mixin color-list-marker($border, $border-shadow, $bgcolor) {
@@ -80,3 +85,4 @@
   margin-right: 0.5em;
   margin-bottom: 2px;
 }
+

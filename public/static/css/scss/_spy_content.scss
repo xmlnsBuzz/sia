@@ -113,6 +113,19 @@ div#scrollContent.scroll-content {
         @include color-list-marker($white, $gray-500, $blue);
       }
     }
+    ul.orange {
+      li {
+        @include color-list-item();
+      }
+
+      li::before {
+        // font-family: $awesome;
+        // color: $danger;
+        // content: "\f105";
+        // font-weight: bold;
+        @include color-list-marker($white, $gray-500, $orange);
+      }
+    }
   }
 }
 

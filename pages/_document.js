@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           <script src="/static/js/mermaid.js"></script>
           {/* <script src="/static/js/mermaid-sub.js"></script> */}
           {/* <script src="/static/js/index.bundle.js" charSet="utf-8"></script> */}
-          
+
 
 
           <script src="/static/js/highlight.pack.js"></script>

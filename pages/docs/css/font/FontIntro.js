@@ -10,7 +10,7 @@ class FontIntro extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title>FONT 개론¡  - Introduction to FONT</title>
+          <title>FONT 개론  - Introduction to FONT</title>
         </Head>
         <Cheader />
 

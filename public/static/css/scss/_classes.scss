@@ -1,14 +1,92 @@
-.normal, .italic, .oblique{
-  font-family: serif;
+.face-serif {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 42px;
 }
+
+.georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .normal {
   font-style: normal;
 }
 
 .italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .oblique {
-  font-style: oblique 40deg;
+  font-style: oblique 40deg !important;
+}
+
+.text-144 {
+  font-size: 144px;
+}
+
+.text-128 {
+  font-size: 128px;
+}
+
+.text-96 {
+  font-size: 96px;
+}
+
+.text-72 {
+  font-size: 72px;
+}
+
+.text-64 {
+  font-size: 64px;
+}
+
+.text-48 {
+  font-size: 48px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-1em {
+  font-size: 1em;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.flex-100p {
+  display: flex;
+  @include archi-border-title();
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+rt {
+  color: $orange;
+}
+
+.emph {
+  color: $green;
+}
+
+iframe {
+  @include archi-border();
 }

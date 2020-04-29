@@ -16,13 +16,19 @@ class FontStyle_N extends React.Component {
                 <a className="nav-link js-scroll-trigger" href="#Styling">Styling</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#Synonym">Synonym</a>
+                <a className="nav-link js-scroll-trigger" href="#CssStyle">Style Sheet</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#FontStyle">font-style</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact"></a>
+                <a className="nav-link js-scroll-trigger" href="#Synonym">Synonym</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#FontStyleSpec">font-style Spec</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#Example1">font-style 예제</a>
               </li>
             </ul>
           </nav>

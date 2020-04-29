@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      div {
+      width: 300px;
+      height: 80px;
+      background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A <div> element with a context menu -->
+    <div contextmenu="popup-menu">
+      Right-click to see the adjusted context menu
+    </div>
+
+    <menu type="context" id="popup-menu">
+      <menuitem>Action</menuitem>
+      <menuitem>Another action</menuitem>
+      <hr />
+      <menuitem>Separated action</menuitem>
+    </menu>
+  </body>
+</html>
