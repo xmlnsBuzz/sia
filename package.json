@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "debounce": "^1.2.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mermaid": "^8.4.8",
     "next": "^9.3.4",
     "now": "^18.0.0",
