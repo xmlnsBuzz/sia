@@ -90,3 +90,18 @@ rt {
 iframe {
   @include archi-border();
 }
+
+.vspace1 {
+  width: 100%;
+  height: 1rem;
+}
+
+.vspace2 {
+  width: 100%;
+  height: 2rem;
+}
+
+.vspace3 {
+  width: 100%;
+  height: 3rem;
+}

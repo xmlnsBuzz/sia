@@ -1,0 +1,13 @@
+[
+  [ <‘font - style’> || <font-variant-css21> || <‘font-weight’> || <‘font-stretch’>]?
+    
+  <‘font-size’>
+  
+  [ / <‘line-height’>]? <‘font-family’> ] 
+
+  | caption 
+  | icon 
+  | menu 
+  | message-box 
+  | small-caption 
+  | status-bar

@@ -41,10 +41,10 @@ class FontFamily_N extends React.Component {
                     <a className="nav-link js-scroll-trigger" href="#fontFamilyValues">Values</a>
                   </li>
                   <li>
-                    <a className="nav-link js-scroll-trigger" href="#fontFamilySpec">font-family spec</a>
+                    <a className="nav-link js-scroll-trigger" href="#fontFamilyInitail">Initial</a>
                   </li>
                   <li>
-                    <a className="nav-link js-scroll-trigger" href="#fontFamilySpec">font-family spec</a>
+                    <a className="nav-link js-scroll-trigger" href="#fontFamilyInheritance">Inheritance</a>
                   </li>
                 </ul>
               </li>

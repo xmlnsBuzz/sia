@@ -31,7 +31,7 @@ class Cheader extends React.Component {
             <a className="nav-link disabled" href="#">Disabled</a>
           </li>
  */}
-              {/*  */}
+              {/* HTML */}
 
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fab fa-html5"></i>&nbsp;HTML</a>
@@ -67,21 +67,48 @@ class Cheader extends React.Component {
               </li>
 
 
-              {/* css dropdown */}
+              {/* CSS Level 3 dropdown */}
 
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" id="css" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3" data-placement="top"><i className="fab fa-css3"></i> CSS Level 3
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="css">
 
+                  {/* #region Syntax menu start */}
+                  <li className="dropdown-item dropdown">
+                    <a className="dropdown-toggle" id="syntax" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3 문법">
+                      Syntax Level 3
+                    </a>
+                    <ul className="dropdown-menu" aria-labelledby="font">
+                      <li className="dropdown-item" title="CSS font Property 소개">
+                        <a href="/docs/css/font/FontIntro">CSS SYNTAX
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/syntax/CssDataTypes">CSS Data Types
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/font/FontFamily">font-family
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/font/FontSize">font-size
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+                  {/* #endregion font menu start */}
+
                   {/* #region font menu start */}
                   <li className="dropdown-item dropdown">
-                    <a className="dropdown-toggle" id="font" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a className="dropdown-toggle" id="font" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Font Level 3">
                       Font Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="font">
                       <li className="dropdown-item" title="CSS font Property 소개">
-                        <a href="/docs/css/font/FontIntro">Introduction to font
+                        <a href="/docs/css/font/FontIntro">Introduction to Font
                         </a>
                       </li>
                       <li className="dropdown-item">
@@ -101,49 +128,48 @@ class Cheader extends React.Component {
                   </li>
                   {/* #endregion font menu start */}
 
+
+
                   <li className="dropdown-item" disabled>
                     <a href="/docs/css/font/Fonts" >font Property</a>
                   </li>
-                </ul>
-              </li>
 
-              {/*  */}
-
-              {/* <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Main menu" data-placement="top"><i className="fab fa-css3"></i> CSS 3
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="dropdown1">
                   
+                  {/* #region font menu start */}
                   <li className="dropdown-item dropdown">
-                    <a className="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Font
+                    <a className="dropdown-toggle" id="textLevel3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Text Level 3">
+                      Text Level 3
                     </a>
-                    <ul className="dropdown-menu" aria-labelledby="dropdown1-1">
+                    <ul className="dropdown-menu" aria-labelledby="textLevel3">
+                      <li className="dropdown-item" title="CSS font Property 소개">
+                        <a href="/docs/css/font/FontIntro">Introduction to Text
+                        </a>
+                      </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/font/FontIntro">Introduction to font
+                        <a href="/docs/css/font/FontStyle">font-style
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/font/FontFamily">font-family
                         </a>
                       </li>
                       <li className="dropdown-item">
                         <a href="/docs/css/font/FontSize">font-size
                         </a>
                       </li>
-                      <li className="dropdown-item dropdown">
-                        <a className="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1
-                        </a>
-                        <ul className="dropdown-menu" aria-labelledby="dropdown1-1-1">
-                          <li className="dropdown-item"><a target="_blank" href="http://www.google.com">Action 1.1.1 - Google</a>
-                          </li>
-                        </ul>
-                      </li>
+
                     </ul>
                   </li>
-                  <li className="dropdown-item">
-                    <a href="/docs/css/font/Fonts">font Property</a>
-                  </li>
+                  {/* #endregion font menu start */}
+
+
                 </ul>
-              </li> */}
+              </li>
 
               {/*  */}
+
+
+
 
             </ul>
 

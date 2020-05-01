@@ -37,22 +37,20 @@ body {
 
 pre > code {
   font-family: "Ibm Plex Mono";
-  font-size: 0.8rem;
-  background-color: #343a40;
+  font-size: 0.75rem;
   background-color: #f8f9fa;
   border: 9px solid transparent;
   -o-border-image: url("../../img/border-image-green.png") 9 repeat;
      border-image: url("../../img/border-image-green.png") 9 repeat;
 }
 
-pre {
+.simple-code {
   font-family: "Ibm Plex Mono";
-  font-size: 0.8rem;
-  background-color: #343a40;
-  background-color: #f8f9fa;
-  border: 9px solid transparent;
-  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
-     border-image: url("../../img/border-image-green.png") 9 repeat;
+  font-size: 0.75rem;
+  background-color: #dee2e6;
+  padding: 1rem;
+  border-radius: .5rem;
+  word-break: break-all;
 }
 
 pre > code::-moz-selection {
@@ -107,14 +105,14 @@ h3 {
 
 h4 {
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
   display: inline-block;
   font-family: "Fira Sans Extra Condensed";
 }
 
 h3,
 h4 {
-  margin-top: 1em 0;
+  margin: 1em 0;
 }
 
 /* #endregion heading */
@@ -352,6 +350,10 @@ div#scrollContent.scroll-content {
      border-image: url("../../img/border-box-27x27.png") 9 repeat;
 }
 
+div#scrollContent.scroll-content .normal-wrap h4 + p.lead {
+  margin-top: 0;
+}
+
 div#scrollContent.scroll-content hr {
   border: 9px solid transparent;
   -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
@@ -493,20 +495,35 @@ div#scrollContent.scroll-content section ul.orange li::before {
   list-style-position: outside;
 }
 
-ul.arrow li {
+ul.check li {
   list-style-type: none;
   line-height: 1.8;
   margin: 0.5em 0;
   display: block;
 }
 
-ul.arrow li::before {
+ul.check li::before {
   font-family: "Font Awesome 5 Pro";
-  color: #e92d40;
-  content: "\f105";
+  font-size: 0.7rem;
+  color: #61af73;
+  content: "\f00c";
   font-weight: bold;
-  margin-right: 0.5em;
-  margin-bottom: 2px;
+  margin-right: 0.5rem;
+}
+
+ul.uncheck li {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0.5em 0;
+  display: block;
+}
+
+ul.uncheck li::before {
+  font-family: "Font Awesome 5 Pro";
+  font-size: 0.8rem;
+  color: #e92d40;
+  content: "\f00d";
+  margin-right: 0.5rem;
 }
 
 /* #endregion scroll spy contents part */
@@ -822,6 +839,21 @@ iframe {
   border: 8px solid transparent;
   -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
      border-image: url("../../img/border-box-orange-main.png") 7 round;
+}
+
+.vspace1 {
+  width: 100%;
+  height: 1rem;
+}
+
+.vspace2 {
+  width: 100%;
+  height: 2rem;
+}
+
+.vspace3 {
+  width: 100%;
+  height: 3rem;
 }
 
 /* #region Gantt Graph */

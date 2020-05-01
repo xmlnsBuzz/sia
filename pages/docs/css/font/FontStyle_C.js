@@ -46,7 +46,7 @@ class FontStyle_C extends React.Component {
               <li>oblique : normal체에 단순히 기울임만 준 글씨체다. 용법은 아래 spec table처럼 oblique라는 keyword 뒤에 deg(degree:각도)를 넣는다. </li>
               <li>italic : 대략 14도 정도의 기울임체인데, 단순히 기울이기만 한 것이 아니라 글꼴 자체의 디자인도 다르다. 위의 경우 'f', 'a', 'e' 등의 디자인이 oblique와 다른 것을 확인할 수 있다.</li>
             </ul>
-            <h3><i class="fas fa-lightbulb text-danger"></i></h3>
+            <h3><i className="fas fa-lightbulb text-danger"></i></h3>
             <p className="lead">oblique의 경우 어떤 font family를 사용하느냐에 따라 적용여부가 결정된다. 즉, font family에 따라 이 deg값이 먹힐 수도 있고, 안 먹힐 수도 있다는 것이다. </p>
             <h2 id="FontStyleSpec">CSS font-style Specification</h2>
             <p className="lead"></p>
