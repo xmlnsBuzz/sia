@@ -44,10 +44,34 @@ div#scrollContent.scroll-content {
     align-content: center;
   }
 
+  q.block {
+    display: block;
+    margin: 1em;
+    color: $success;
+    font-weight: 500;
+  }
+
+  q.block::before {
+    font-family: $awesome;
+    content: '\f10d';
+    font-size: .3rem;
+    position: relative;
+    margin-right: 0.25rem;
+    top: -0.5rem;
+  }
+
+  q.block::after {
+    font-family: $awesome;
+    content: '\f10e';
+    font-size: .3rem;
+    position: relative;
+    // top: 0.5rem;
+    margin-left: 0.25rem;
+  }
+
   section {
     margin-top: 1em;
     margin-bottom: 100px;
-
     // .normal-wrap {
     //   text-align-last: left;
     // }
@@ -78,7 +102,7 @@ div#scrollContent.scroll-content {
 
     ul.red {
       li {
-        @include color-list-item();
+        @include basic-list-item();
       }
 
       li::before {
@@ -92,7 +116,7 @@ div#scrollContent.scroll-content {
 
     ul.green {
       li {
-        @include color-list-item();
+        @include basic-list-item();
       }
 
       li::before {
@@ -106,7 +130,7 @@ div#scrollContent.scroll-content {
 
     ul.blue {
       li {
-        @include color-list-item();
+        @include basic-list-item();
       }
 
       li::before {
@@ -120,7 +144,7 @@ div#scrollContent.scroll-content {
 
     ul.orange {
       li {
-        @include color-list-item();
+        @include basic-list-item();
       }
 
       li::before {
@@ -134,37 +158,43 @@ div#scrollContent.scroll-content {
   }
 }
 
-ul.check {
+ul.check-all {
   li {
-    @include color-list-item();
+    @include basic-list-item();
   }
 
   li::before {
-    font-family: $awesome;
-    font-size: 0.7rem;
-    color: $success;
-    content: "\f00c";
-    font-weight: bold;
-    margin-right: 0.5rem;
+    @include list-item-check($success, "\f00c");
     // @include arrow-marker($danger, bold);
+  }
+
+  li.uncheck {
+    @include basic-list-item();
+  }
+
+  li.uncheck::before {
+    @include list-item-uncheck($danger, "\f00d");
   }
 }
 
-ul.uncheck {
+ul.uncheck-all {
   li {
-    @include color-list-item();
+    @include basic-list-item();
   }
 
   li::before {
-    font-family: $awesome;
-    font-size: 0.8rem;
-    color: $danger;
-    content: "\f00d";
-    // font-weight: bold;
-    margin-right: 0.5rem;
-    // @include arrow-marker($danger, bold);
+    @include list-item-check($yellow, "\f00d");
   }
-}
 
+
+  li.check {
+    @include basic-list-item();
+  }
+
+  li.check::before {
+    @include list-item-check($success, "\f00c");
+  }
+
+}
 
 /* #endregion scroll spy contents part */

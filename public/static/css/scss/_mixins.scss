@@ -54,20 +54,20 @@
 }
 
 /* list marker mixins */
-@mixin color-list-item() {
+@mixin basic-list-item() {
   list-style-type: none;
   line-height: 1.8;
   margin: 0.5em 0;
   display: block;
 }
 
-@mixin color-list-marker($border, $border-shadow, $bgcolor) {
+@mixin color-list-marker($border, $border-shadow-color, $bgcolor) {
   line-height: 1.8em;
   content: '';
   width: 0.5em;
   height: 0.5em;
   border: 1px solid $border;
-  box-shadow: 2px 1px 4px $border-shadow;
+  box-shadow: 2px 1px 4px $border-shadow-color;
   border-radius: 50%;
   display: inline-block;
   background-color: $bgcolor;
@@ -84,5 +84,25 @@
   font-weight: $weight;
   margin-right: 0.5em;
   margin-bottom: 2px;
+}
+
+@mixin list-item-check($list-icon-color, $list-content){
+      font-family: $awesome;
+      font-size: 0.7rem;
+      color: $list-icon-color;
+      content: $list-content;
+      // "\f00c";
+      font-weight: bold;
+      margin-right: 0.5rem;
+}
+
+@mixin list-item-uncheck($list-icon-color, $list-content){
+      font-family: $awesome;
+      font-size: 0.9rem;
+      color: $list-icon-color;
+      content: $list-content;
+      // "\f00c";
+      font-weight: bold;
+      margin-right: 0.5rem;
 }
 
