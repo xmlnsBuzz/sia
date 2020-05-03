@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CssDataTypes_N extends React.Component {
+class SyntaxDataTypes_N extends React.Component {
   render () {
     return (
       <React.Fragment>
@@ -29,4 +29,4 @@ class CssDataTypes_N extends React.Component {
   }
 }
 
-export default CssDataTypes_N;
+export default SyntaxDataTypes_N;

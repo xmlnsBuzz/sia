@@ -32,5 +32,3 @@ yarn-error.log*
 /zippy
 /TempStorage
 /backup
-/public/static/webfonts*.*
-**/webfonts*/**

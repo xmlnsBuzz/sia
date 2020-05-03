@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CssDataTypes_C extends React.Component {
+class SyntaxDataTypes_C extends React.Component {
   render () {
     return (
       <React.Fragment>
@@ -20,8 +20,10 @@ class CssDataTypes_C extends React.Component {
         </section>
         
         <section id="">
-          <h2></h2>
-          <p className="lead"></p>
+         <div className="normal-wrap">
+           <h2 id=""></h2>
+           <p className="lead"></p>
+         </div>
         </section>
 
       </React.Fragment>
@@ -29,4 +31,4 @@ class CssDataTypes_C extends React.Component {
   }
 }
 
-export default CssDataTypes_C;
+export default SyntaxDataTypes_C;

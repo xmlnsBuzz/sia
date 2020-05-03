@@ -2,11 +2,11 @@
  import React from 'react';
 import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
-import CssDataTypes_C from './CssDataTypes_C';
-import CssDataTypes_N from './CssDataTypes_N';
+import SyntaxDataTypes_C from './SyntaxDataTypes_C';
+import SyntaxDataTypes_N from './SyntaxDataTypes_N';
 import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
 
-class CssDataTypes extends React.Component {
+class SyntaxDataTypes extends React.Component {
   render () {
     return (
       <React.Fragment>
@@ -18,11 +18,11 @@ class CssDataTypes extends React.Component {
         <main id={MainId} className={MainClass}>
           <div id={ScrollContentId} className={ScrollContentClass}>
             <div className={NormalWrapClass}>
-              <CssDataTypes_C />
+              <SyntaxDataTypes_C />
             </div>
           </div>
           <section id={ScrollSpyId} className={ScrollSpyClass}>
-            <CssDataTypes_N />
+            <SyntaxDataTypes_N />
           </section>
         </main>
       </React.Fragment>
@@ -30,4 +30,4 @@ class CssDataTypes extends React.Component {
   }
 }
 
-export default CssDataTypes;
+export default SyntaxDataTypes;
