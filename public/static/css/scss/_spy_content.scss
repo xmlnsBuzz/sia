@@ -1,17 +1,17 @@
 /* #region scroll spy contents part */
 div#scrollContent.scroll-content {
+  background-color: $transparent;
   margin-top: calc(#{$navbar_height} - 0.5em);
   margin-left: 0;
   margin-right: $spyCol-width;
+  font-weight: 300;
   margin-bottom: 1em;
-  background-color: $transparent;
   // overflow-x: hidden;
   overflow-y: auto;
   flex-grow: 8;
   width: 100% - $spyCol-width;
   font-family: $noto-sans-kr;
   font-size: 1em;
-  font-weight: 300;
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -24,31 +24,72 @@ div#scrollContent.scroll-content {
   background-color: #fff;
   @include archi-border-main();
 
-  // height: 100vh;
 
+  a:link {
+    color: $blue;
+    text-decoration: underline;
+    // text-decoration-style: dotted;
+  }
+
+
+  a:hover {
+    color: $red;
+  }
+
+  a:visited {
+    color: $indigo;
+  }
   .normal-wrap h4+p.lead {
     margin-top: 0;
   }
 
-
   hr {
-    @include archi-border-main();
+    @include archi-border-main;
     // border-image-outset: 8px 8px 0 8px;
     background-color: transparent;
     // border: 3px solid transparent;
-    border-width: 0 5px 6px 5px;
+    border-width: 0 5px 6px;
   }
 
   div.align-center {
-    display: flex;
     align-content: center;
+    display: flex;
   }
 
-  q.block {
-    display: block;
+  q::before {
+    color: $danger;
+    font-weight: bold;
+    font-family: $roboto;
+  }
+
+  q::after {
+    color: $danger;
+    font-weight: bold;
+    font-family: $roboto;
+  }
+
+  q.inline {
     margin: 1em;
     color: $danger;
     font-weight: 500;
+  }
+
+
+  q.inline::before {
+    font-family: $awesome;
+    content: '\f100';
+    font-size: 1rem;
+
+    margin-right: 0.25rem;
+  }
+
+
+  q.inline::after {
+    font-family: $awesome;
+    content: '\f101';
+    font-size: 1rem;
+    // top: 0.5rem;
+    margin-left: 0.25rem;
   }
 
   q.block::before {
@@ -60,6 +101,8 @@ div#scrollContent.scroll-content {
     top: -0.5rem;
   }
 
+
+
   q.block::after {
     font-family: $awesome;
     content: '\f10e';
@@ -67,6 +110,13 @@ div#scrollContent.scroll-content {
     position: relative;
     // top: 0.5rem;
     margin-left: 0.25rem;
+  }
+
+  q.block-success {
+    display: block;
+    margin: 1em;
+    color: $success;
+    font-weight: 500;
   }
 
   section {
@@ -98,6 +148,11 @@ div#scrollContent.scroll-content {
 
     p.lead:last-of-type {
       margin-bottom: 2em;
+    }
+
+    ul,
+    li {
+      font-size: 0.8rem;
     }
 
     ul.red {
@@ -183,7 +238,7 @@ ul.uncheck-all {
   }
 
   li::before {
-    @include list-item-check($yellow, "\f00d");
+    @include list-item-check($danger, "\f00d");
   }
 
 
@@ -195,6 +250,50 @@ ul.uncheck-all {
     @include list-item-check($success, "\f00c");
   }
 
+}
+
+pre>code {
+  font-family: $ibm-plex-mono;
+  font-size: 0.8rem;
+  // border-radius: 6px;
+  @include archi-border-code();
+}
+
+.simple-code {
+  font-family: $ibm-plex-mono;
+  font-size: 0.75rem;
+  // border-radius: 6px;
+  background-color: $gray-300;
+  padding: 1rem;
+  border-radius: .5rem;
+  word-break: break-all;
+  color: $pink;
+}
+
+pre>code::selection {
+  background-color: $orange-t;
+}
+
+code.success {
+  display: block;
+  margin: 1rem 0;
+  padding: 1em;
+  background-color: $gray-200;
+  border-left: medium solid $success;
+}
+
+code.bg-gray ul {
+  display: block;
+  margin: 1rem 0;
+  padding: 1em;
+  color: $dark;
+  background-color: $gray-200;
+  border-radius: 0.5rem;
+}
+
+span.space {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
 }
 
 /* #endregion scroll spy contents part */

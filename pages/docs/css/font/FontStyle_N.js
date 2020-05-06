@@ -6,10 +6,10 @@ class FontStyle_N extends React.Component {
       <React.Fragment>
         <div className="container text-center">
           <div className="bookmark-header">
-             <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
-               font-style
+            <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
+              font-style
              </a>
-           </div>
+          </div>
           <nav className="collapse navbar-collapse text-left overflow-scroll">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -27,8 +27,25 @@ class FontStyle_N extends React.Component {
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#FontStyleSpec">font-style Spec</a>
               </li>
-              <li className="nav-item">
+                            <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#Example1">font-style 예제</a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#fontStyleInheritance">상속</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#denyFontStyleInheritance">상속 거부</a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#ReadCssTable_1">Spec 해독하기 <span style={{fontFamily: 'initial'}}>1</span></a>
+                <ul>
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#SinglePipe">Single Pipe</a>
+                  </li>
+                </ul>
+
               </li>
             </ul>
           </nav>

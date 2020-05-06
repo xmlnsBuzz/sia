@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("../css/fontawesome.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,regular,500,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
@@ -33,32 +34,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-}
-
-pre > code {
-  font-family: "Ibm Plex Mono";
-  font-size: 0.75rem;
-  background-color: #f8f9fa;
-  border: 9px solid transparent;
-  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
-     border-image: url("../../img/border-image-green.png") 9 repeat;
-}
-
-.simple-code {
-  font-family: "Ibm Plex Mono";
-  font-size: 0.75rem;
-  background-color: #dee2e6;
-  padding: 1rem;
-  border-radius: .5rem;
-  word-break: break-all;
-}
-
-pre > code::-moz-selection {
-  background-color: #ffa961ee;
-}
-
-pre > code::selection {
-  background-color: #ffa961ee;
+  color: #000;
+  font-weight: 500;
 }
 
 .alt-image-r {
@@ -251,7 +228,7 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
   line-height: 2.2;
   font-weight: 500;
   padding: 0 1em;
-  color: #000000;
+  color: #000;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li.dropdown-item a:hover,
@@ -274,32 +251,28 @@ header#header.header nav.navbar div.collapse.navbar-collapse ul.navbar-nav li.na
 
 header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline {
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline input.form-control {
-  padding-top: 2px;
-  margin-bottom: 0;
-  font-size: 14px;
-  height: 35px;
-  border-radius: 4px 0 0 4px;
+  font-size: 12px;
+  height: 32px;
+  border-radius: 0;
   margin-right: 0 !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline button.btn {
-  font-size: 14px;
-  border-radius: 0 4px 4px 0;
+  font-size: 12px;
+  border-radius: 0;
   background-color: transparent;
   -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-  color: #ffa961ee;
-  border-color: #ffa961ee;
+  color: #61af73;
+  border-color: #61af73;
 }
 
 header#header.header nav.navbar div.collapse.navbar-collapse form.form-inline button.btn:hover {
-  background-color: #ffa961ee;
+  background-color: #61af73;
   color: white;
 }
 
@@ -322,11 +295,12 @@ main#main.main {
 /* #endregion main part */
 /* #region scroll spy contents part */
 div#scrollContent.scroll-content {
+  background-color: transparent;
   margin-top: calc(5em - 0.5em);
   margin-left: 0;
   margin-right: calc(210px - 2 * 1em);
+  font-weight: 300;
   margin-bottom: 1em;
-  background-color: transparent;
   overflow-y: auto;
   -webkit-box-flex: 8;
       -ms-flex-positive: 8;
@@ -334,7 +308,6 @@ div#scrollContent.scroll-content {
   width: 100%-calc(210px - 2 * 1em);
   font-family: "Noto Sans Kr";
   font-size: 1em;
-  font-weight: 300;
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -350,6 +323,19 @@ div#scrollContent.scroll-content {
      border-image: url("../../img/border-box-27x27.png") 9 repeat;
 }
 
+div#scrollContent.scroll-content a:link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+div#scrollContent.scroll-content a:hover {
+  color: #dc3545;
+}
+
+div#scrollContent.scroll-content a:visited {
+  color: #6610f2;
+}
+
 div#scrollContent.scroll-content .normal-wrap h4 + p.lead {
   margin-top: 0;
 }
@@ -359,22 +345,47 @@ div#scrollContent.scroll-content hr {
   -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
      border-image: url("../../img/border-box-27x27.png") 9 repeat;
   background-color: transparent;
-  border-width: 0 5px 6px 5px;
+  border-width: 0 5px 6px;
 }
 
 div#scrollContent.scroll-content div.align-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
-div#scrollContent.scroll-content q.block {
-  display: block;
+div#scrollContent.scroll-content q::before {
+  color: #e92d40;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+div#scrollContent.scroll-content q::after {
+  color: #e92d40;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+div#scrollContent.scroll-content q.inline {
   margin: 1em;
   color: #e92d40;
   font-weight: 500;
+}
+
+div#scrollContent.scroll-content q.inline::before {
+  font-family: "Font Awesome 5 Pro";
+  content: '\f100';
+  font-size: 1rem;
+  margin-right: 0.25rem;
+}
+
+div#scrollContent.scroll-content q.inline::after {
+  font-family: "Font Awesome 5 Pro";
+  content: '\f101';
+  font-size: 1rem;
+  margin-left: 0.25rem;
 }
 
 div#scrollContent.scroll-content q.block::before {
@@ -392,6 +403,13 @@ div#scrollContent.scroll-content q.block::after {
   font-size: .3rem;
   position: relative;
   margin-left: 0.25rem;
+}
+
+div#scrollContent.scroll-content q.block-success {
+  display: block;
+  margin: 1em;
+  color: #61af73;
+  font-weight: 500;
 }
 
 div#scrollContent.scroll-content section {
@@ -421,6 +439,11 @@ div#scrollContent.scroll-content section p.lead:first-of-type {
 
 div#scrollContent.scroll-content section p.lead:last-of-type {
   margin-bottom: 2em;
+}
+
+div#scrollContent.scroll-content section ul,
+div#scrollContent.scroll-content section li {
+  font-size: 0.8rem;
 }
 
 div#scrollContent.scroll-content section ul.red li {
@@ -561,7 +584,7 @@ ul.uncheck-all li {
 ul.uncheck-all li::before {
   font-family: "Font Awesome 5 Pro";
   font-size: 0.7rem;
-  color: #ffc107;
+  color: #e92d40;
   content: "";
   font-weight: bold;
   margin-right: 0.5rem;
@@ -583,18 +606,64 @@ ul.uncheck-all li.check::before {
   margin-right: 0.5rem;
 }
 
+pre > code {
+  font-family: "Ibm Plex Mono";
+  font-size: 0.8rem;
+  background-color: #f8f9fa;
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
+     border-image: url("../../img/border-image-green.png") 9 repeat;
+}
+
+.simple-code {
+  font-family: "Ibm Plex Mono";
+  font-size: 0.75rem;
+  background-color: #dee2e6;
+  padding: 1rem;
+  border-radius: .5rem;
+  word-break: break-all;
+  color: #e83e8c;
+}
+
+pre > code::-moz-selection {
+  background-color: #ffa961ee;
+}
+
+pre > code::selection {
+  background-color: #ffa961ee;
+}
+
+code.success {
+  display: block;
+  margin: 1rem 0;
+  padding: 1em;
+  background-color: #e9ecef;
+  border-left: medium solid #61af73;
+}
+
+code.bg-gray ul {
+  display: block;
+  margin: 1rem 0;
+  padding: 1em;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+}
+
+span.space {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
 /* #endregion scroll spy contents part */
 /* #region scroll spy navigation part */
 section#scrollSpy.scroll-spy {
   width: calc(210px - 2 * 1em);
   position: fixed;
   margin-top: calc(5em - 0.5em);
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
   right: calc((100vw - 1200px) / 2);
-  overflow-y: auto;
-  min-height: calc(100vh - 5em - 0.5em);
+  overflow-y: auto !important;
+  max-height: calc(100vh - 5em - 0.5em);
   font-family: "Shadows Into Light Two";
   letter-spacing: 2px;
   font-weight: bold;
@@ -651,7 +720,7 @@ section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-ite
 }
 
 section#scrollSpy.scroll-spy div.container nav.collapse ul.navbar-nav li.nav-item a.nav-link.js-scroll-trigger {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-weight: 900;
   font-size: 12px;
@@ -809,11 +878,11 @@ table.sortable tbody tr td:last-child {
 }
 
 .italic {
-  font-style: italic !important;
+  font-style: italic;
 }
 
 .oblique {
-  font-style: oblique 40deg !important;
+  font-style: oblique 40deg;
 }
 
 .text-144 {
@@ -869,19 +938,19 @@ table.sortable tbody tr td:last-child {
 }
 
 .flex-100p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f8f9fa;
   border: 9px solid transparent;
   -o-border-image: url("../../img/border-box-999-222.png") 9 repeat;
      border-image: url("../../img/border-box-999-222.png") 9 repeat;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 rt {
@@ -900,22 +969,58 @@ iframe {
 }
 
 .vspace1 {
-  width: 100%;
   height: 1rem;
+  width: 100%;
 }
 
 .vspace2 {
-  width: 100%;
   height: 2rem;
+  width: 100%;
 }
 
 .vspace3 {
-  width: 100%;
   height: 3rem;
+  width: 100%;
 }
 
-.ex {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.bottom-0 {
+  margin-bottom: 0;
+}
+
+.shadow {
+  text-shadow: 3px 3px 5px #ffa961ee, 3px -3px 5px #ffa961ee, -3px -3px 5px #ffa961ee, -3px 3px 5px #ffa961ee;
+}
+
+.tag {
+  color: #007bff;
+  font-family: "Ibm Plex Mono";
+  font-size: 14px;
+}
+
+.tag::before {
+  content: '<';
+  margin-right: .1rem;
+}
+
+.tag::after {
+  content: '>';
+  margin-left: .1rem;
+}
+
+.css-prop {
+  color: #e83e8c;
+  font-family: "Ibm Plex Mono";
+  font-size: 14px;
+}
+
+.css-prop::before {
+  content: '{';
+  margin-right: .1rem;
+}
+
+.css-prop::after {
+  content: '}';
+  margin-left: .1rem;
 }
 
 /* #region Gantt Graph */

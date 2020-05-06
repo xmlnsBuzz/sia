@@ -14,6 +14,7 @@ class FontIntro_N extends React.Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#intro_whatIsFonts">FONT란</a>
+                <a className="nav-link js-scroll-trigger" href="#intro_typography">Typography</a>
                 <a className="nav-link js-scroll-trigger" href="#intro_transformFonts">Font Properties</a>
                 <ul>
                   <li className="nav-item">

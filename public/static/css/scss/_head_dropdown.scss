@@ -145,32 +145,34 @@ header#header.header {
 
       form.form-inline {
         padding: 0;
-        font-size: 14px;
+        font-size: 12px;
 
         input.form-control {
-          padding-top: 2px;
-          margin-bottom: 0;
-          font-size: 14px;
-          height: 35px;
-          border-radius: 4px 0 0 4px;
+          // padding-top: 2px;
+          // margin-bottom: 0;
+          font-size: 12px;
+          height: 32px;
+          // border-radius: 4px 0 0 4px;
+          border-radius: 0;
           margin-right: 0 !important;
-          box-sizing: border-box;
+          // box-sizing: border-box;
           // @include archi-border-dropdown();
         }
 
         button.btn {
-          font-size: 14px;
-          border-radius: 0 4px 4px 0;
+          font-size: 12px;
+          // border-radius: 0 4px 4px 0;
+          border-radius: 0;
           background-color: transparent;
           transition: background-color 0.25s ease-in-out,
             color 0.25s ease-in-out;
-          color: $orange-t;
-          border-color: $orange-t;
+          color: $success;
+          border-color: $success;
           // @include archi-border-dropdown();
         }
 
         button.btn:hover {
-          background-color: $orange-t;
+          background-color: $success;
           color: white;
         }
       }

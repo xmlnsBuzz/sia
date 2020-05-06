@@ -14,7 +14,7 @@ class FontIntro_C extends React.Component {
             <p className="lead">Font는 글꼴, 글자체, 서체등으로도 불리우며 한글의 낱자, 알파벳(대소문자), 숫자, 기호 등이 모두 같은 느낌을 주는 인쇄활자  (<a href="https://fonts.google.com/specimen/Noto+Sans+KR">구글폰트 Noto Sans KR</a> 참조) 를 뜻한다. 각 글꼴(font family)은 그 글꼴을 구성하는 각 활자가 모두 통일된 모양(face), 굵기(weight), 장평(condensed or expanded), 장식(serif or sans-serif), 기울기(style)등을 유지한다. 즉, 앞에 나열한 것 중 한가지라도 다르다면 같은 글꼴(font)이 아니라는 말이다.</p>
 
             <p className="lead">Font에 대한 정보를 찾고자 웹서핑을 하다보면 가끔 'Typeface'라는 말이 나온다. 이 단어는 주로 종이인쇄나 시각디자인을 전문으로 하는 사람들이 사용하는데, 하나의 페이지를 디자인하는데 사용되는 여러가지 글꼴들을 모두 포함하여 typeface라 부른다. 쉽게 말해 방탄소년단의 'Map of the soul 7' 앨범이 typeface라면 이 앨범에 포함된 'Persona'는 하나의 글꼴(font-family)인 셈이다. 하지만 이런 것들에 대한 구분없이 마구잡이로 만드는 웹문서에는 이런 구분이 별 의미없을지 모르겠다. </p>
-
+<h2 id="intro_typography">Typography</h2>
             <p className="lead">그렇지만 이런 것들과 상관없이 시각디자인에서 사용하는 '<span className="emph">Typography</span>'라는 용어가 있다. 이 단어는 좁은 의미에서는 위의 typeface와 비슷하지만 <span className="emph">typography</span>는 글꼴 외에도 'image', 'icon' 등 여러가지 디자인적 요소를 포함한다는 점으로 구별할 수 있다. 우리가 개발하는 웹페이지도 '<span className="emph">typography</span>' 수준이 되도록 노력하면 좋겠다. 아래의 이미지는 '<span className="emph">typography</span>'의 중요성을 상기시켜주는 좋은 예이다.</p>
             <p className="lead">아카데미상 시상식에서 잘못된 typogrphy 덕분에 페이 더너웨이 아지매가 여우주연상을 'La la land'에게 수여하게 되는 해프닝이 벌어지는데, 그 때 사용된 typo card를 수정 전과 후로 본 것이다. 보다시피</p>
             <ul className="green">
@@ -39,7 +39,7 @@ class FontIntro_C extends React.Component {
                 <h3 id="intro_serifs">Serifs (명조체:明朝體)</h3>
                 <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Serif KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>明朝體</aside>가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로두께 : 세로두께 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
               </div>
-              <div style={{ both: 'clear' }} className="normal-wrap">
+              <div className="normal-wrap">
                 <h3 id="intro_sansSerifs">Sans Serifs (고딕체:Gothic)</h3>
                 <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Sans KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>暗夕體</aside>각 획의 굵기가 일정한 글꼴이다. 대표적인 google font로는 Roboto, Open Sans, Lato, Monserrat 등의 영문폰트가 있고 한글은 Noto Sans Kr, Nanum Gothic 등이 있다. 윈도우 OS 글꼴 중 Arial, 돋움체 등이 여기에 해당된다.</p>
                 <p className="lead">그 밖에 손으로 쓴 느낌의 필기체(cursive), coding에 주로 사용되는 고정폭(monospace or fixed-width), 어디에도 얽매이지 않고 틀에서 벗어난 '멋대로체'(display) 등이 있다.</p>
@@ -61,7 +61,6 @@ class FontIntro_C extends React.Component {
             <h2 id="intro_fontTable">font관련 properties</h2>
             <p className="lead">아래의 표는 font관련 property들을 나열한 것이다. 내가 일일히 정성껏 만든 것은 아니고, W3C CSS spec에서 복사했다. 이 표에 익숙한 사람과 그렇지 않은 사람이 있을텐데, CSS를 꽤 안다는 사람도 'Values'에 해당되는 값들은 대개 해석이 불가할 것이다.</p>
 
-            <p className="lead">세상에는 '앞에 놓고 하루종일 설명해줘도 알기 힘든 지식'과 '귀띔만 해줘도 단번에 알 수 있는 지식'이 있다. 그리고 W3C spec 중 CSS spec은 몇 가지 기본적 방법만 알면 모든 CSS spec을 스스로 해독할 수 있는 수준이라 본다. 즉, value에 사용된 기호만 이해하면 나머지는 저절로 해독할 수 있는데, 그 기호라는 것이 몇 개 되지 않을 뿐더러 고난이도가 아니다. 물론 처음엔 좀 헛갈리겠지만... 이 채널의 목적 중 하나는 W3C CSS spec table을 스스로 해독할 수 있는 지식을 제공하는 것이다. 한발 한발 서서히 나아가다 보면 점차 익숙해 질 것이다. </p>
             <table className="sortable">
               <caption>W3C Spec에서 복사함.</caption>
               <thead>
@@ -268,6 +267,9 @@ class FontIntro_C extends React.Component {
                 </tr>
               </tbody>
             </table>
+            <div className="vspace1"></div>
+            <p className="lead">세상에는 '앞에 놓고 하루종일 설명해줘도 알기 힘든 지식'과 '귀띔만 해줘도 단번에 알 수 있는 지식'이 있다. 그리고 W3C 여러가지 spec 중 CSS spec은 몇 가지 기본적 방법만 알면 모든 CSS spec을 스스로 해독할 수 있는 수준이라 본다. 즉, value에 사용된 기호만 이해하면 나머지는 스스로 해독할 수 있는데, 그 기호라는 것이 몇 개 되지 않을 뿐더러 고난이도가 아니라 귀띔만으로도 알 수 있는 정도다. 물론 처음엔 좀 헛갈리겠지만... 이 채널의 목적 중 하나는 W3C CSS spec table을 스스로 해독할 수 있는 지식을 제공하는 것이다. 한발 한발 서서히 나아가다 보면 점차 익숙해 질 것이다. </p>
+
           </section>
         </section>
       </React.Fragment>

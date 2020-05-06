@@ -5,10 +5,11 @@ section#scrollSpy.scroll-spy {
   // top: calc(#{$navbar_height} - 12px); // 참 이상혀~
   margin-top: calc(#{$navbar_height} - 0.5em);
 
-  flex: 1 0 auto;
+  // flex: 1 0 auto;
   right: calc((100vw - 1200px) / 2);
-  overflow-y: auto;
-  min-height: calc(100vh - #{$navbar_height} - 0.5em);
+  overflow-y: auto!important;
+  // min-height: calc(100vh - #{$navbar_height} - 0.5em);
+  max-height: calc(100vh - #{$navbar_height} - 0.5em);
   font-family: $font-button-and-title-two;
   letter-spacing: 2px;
   font-weight: bold;

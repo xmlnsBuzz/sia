@@ -1,17 +1,18 @@
 $awesome: 'Font Awesome 5 Pro';
+$awesome-free: 'Font Awesome 5 Free';
 $verdana: 'Verdana, Geneva, Tahoma, sans-serif';
 $noto-sans-kr: 'Noto Sans Kr';
 $noto-serif-kr: 'Noto Serif Kr';
 $roboto: Roboto;
 $fira-code: 'Fira Code';
 $fira-sans: 'Fira Sans';
-$fira-sans-xcond : 'Fira Sans Extra Condensed';
+$fira-sans-xcond: 'Fira Sans Extra Condensed';
 $open-sans: 'Open Sans';
 $open-sans-cond: 'Open Sans Condensed';
 $ibm-plex-mono: 'Ibm Plex Mono';
 $font-button-and-title: 'Shadows Into Light';
 $font-button-and-title-two: 'Shadows Into Light Two';
-$coding-font : 'Fira Code';
+$coding-font: 'Fira Code';
 $lato: Lato;
 $main-para-font: 'Noto Sans KR';
 
@@ -21,7 +22,7 @@ $anchor-lr-padding: 1em; // NOTE layout width 잡을 때 기준점
 $spyCol-width: calc(210px - 2 * #{$anchor-lr-padding});
 $spyContent-width: calc(100vw + calc() - #{$spyCol-width});
 $slight-gray: #c7c7c7;
-$rich-black: #000000;
+$rich-black: #000;
 
 // $h1-size : 42px;
 // $hr-color : #943232;
@@ -63,6 +64,8 @@ $warning: #ffd761;
 $danger: #e92d40;
 $light: #f8f9fa;
 $dark: #343a40;
+$dark-percentage: 15%;
+$special: darken($success, $dark-percentage);
 
 $white: #ffffff !default;
 $gray-100: #f8f9fa !default;

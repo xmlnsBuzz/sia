@@ -106,3 +106,15 @@
       margin-right: 0.5rem;
 }
 
+@mixin text-shadow335($color) {
+text-shadow: 
+  3px 3px 5px $color,
+  3px -3px 5px $color,
+  -3px -3px 5px $color,
+  -3px 3px 5px $color;
+}
+
+@mixin text-shadow335-simple($color) {
+text-shadow: 3px 3px 5px $color;
+}
+
