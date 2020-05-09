@@ -7,7 +7,7 @@ section#scrollSpy.scroll-spy {
 
   // flex: 1 0 auto;
   right: calc((100vw - 1200px) / 2);
-  overflow-y: auto!important;
+  overflow-y: auto !important;
   // min-height: calc(100vh - #{$navbar_height} - 0.5em);
   max-height: calc(100vh - #{$navbar_height} - 0.5em);
   font-family: $font-button-and-title-two;
@@ -30,7 +30,7 @@ section#scrollSpy.scroll-spy {
       @include archi-border();
     }
 
-    > a {
+    >a {
       text-align: center;
     }
 
@@ -43,7 +43,10 @@ section#scrollSpy.scroll-spy {
       }
     }
 
-    li {list-style-type: none;}
+    li {
+      list-style-type: none;
+    }
+
     nav.collapse {
       ul.navbar-nav {
         li.nav-item {
@@ -99,6 +102,12 @@ section#scrollSpy.scroll-spy {
         }
       }
     }
+
+    .bookmark-header>a.navbar-brand.js-scroll-trigger {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
   }
 }
 

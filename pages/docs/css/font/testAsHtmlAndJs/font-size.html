@@ -8,8 +8,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <style>
     :root {
-      font-size: 1.5em;
+      font-family: sans-serif;
+      font-size: 2em;
     }
+
+    /* 
+      :root의 font-size 값을 변동시켜 본다. 
+      smaller, medium, larger 값은 변동되고
+      나머지 keyword 값들은 절대값이므로 변동없다.
+      */
+
     .small {
       font-size: small;
     }
@@ -31,7 +39,11 @@
     }
 
     .f16 {
-      font-size: 1em;
+      font-size: 16px;
+    }
+
+    .rem-1 {
+      font-size: 1rem;
     }
 
     .large {
@@ -54,11 +66,13 @@
 </head>
 
 <body>
+  <h1>font-size의 Keyword 값들</h1>
   <p class="xx-small">xx-small : 9px</p>
   <p class="x-small">x-small : 10px</p>
   <p class="small">small : 13px</p>
   <p class="smaller">smaller : 13.3333px</p>
   <p class="medium">medium : 16px</p>
+  <p className="rem-1">rem : root size</p>
   <p class="f16">1em : 16px</p>
   <p class="large">large : 18px</p>
   <p class="larger">larger : 19.2px</p>
@@ -72,6 +86,136 @@
   <font size="5">font size</font>
   <font size="6">font size</font>
   <font size="7">font size</font>
+
+
+
+  <table class="sortable">
+    <thead>
+      <tr>
+        <th>CSS absolute-size values</th>
+        <th>xx-small</th>
+        <th>x-small</th>
+        <th>small</th>
+        <th>medium</th>
+        <th>large</th>
+        <th>x-large</th>
+        <th>xx-large</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>scaling factor</th>
+        <td>3/5</td>
+        <td>3/4</td>
+        <td>8/9</td>
+        <td>1</td>
+        <td>6/5</td>
+        <td>3/2</td>
+        <td>2/1</td>
+        <td>3/1</td>
+      </tr>
+      <tr>
+        <th>HTML headings</th>
+        <td>h6</td>
+        <td></td>
+        <td>h5</td>
+        <td>h4</td>
+        <td>h3</td>
+        <td>h2</td>
+        <td>h1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>HTML font sizes</th>
+        <td>1</td>
+        <td></td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+    </tbody>
+  </table>
+  https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/
+  <table class="normal">
+    <tbody>
+      <tr>
+        <td>Name:
+
+        </td>
+        <td><a href="https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#font-style-prop">font-style</a></td>
+      </tr>
+      <tr>
+        <td>Value:
+
+        </td>
+        <td><a href="https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#font-style-normal-value"
+            title="normal!!font-style">normal</a> | <a
+            href="https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#italic">italic</a> |
+          <a href="https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#oblique">oblique</a>
+
+        </td>
+      </tr>
+      <tr>
+        <td>Initial:
+
+        </td>
+        <td>normal
+
+        </td>
+      </tr>
+      <tr>
+        <td>Applies to:
+
+        </td>
+        <td>all elements
+
+        </td>
+      </tr>
+      <tr>
+        <td>Inherited:
+
+        </td>
+        <td>yes
+
+        </td>
+      </tr>
+      <tr>
+        <td>Percentages:
+
+        </td>
+        <td>N/A
+
+        </td>
+      </tr>
+      <tr>
+        <td>Media:
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <td>Computed value:
+
+        </td>
+        <td>as specified
+
+        </td>
+      </tr>
+      <tr>
+        <td>Animatable:
+
+        </td>
+        <td>no
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 
 </html>

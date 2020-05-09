@@ -36,7 +36,7 @@ class Cheader extends React.Component {
 
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fab fa-html5"></i>&nbsp;HTML</a>
-                <ul className="dropdown-menu" aria-labelledby="html">
+{/*                 <ul className="dropdown-menu" aria-labelledby="html">
                   <li className="dropdown-item"><a href="#">Action 2 A</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 B</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 C</a></li>
@@ -64,7 +64,7 @@ class Cheader extends React.Component {
                       </li>
                     </ul>
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
 
@@ -75,12 +75,12 @@ class Cheader extends React.Component {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="css">
 
-                  {/* #region Syntax menu start */}
+                  {/* #region Syntax Module 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="syntax" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3 문법">
                       Syntax Level 3
                     </a>
-                    <ul className="dropdown-menu" aria-labelledby="font">
+                    <ul className="dropdown-menu" aria-labelledby="syntax">
                       <li className="dropdown-item" title="CSS font Property 소개">
                         <a href="/docs/css/font/FontIntro">CSS SYNTAX
                         </a>
@@ -89,20 +89,39 @@ class Cheader extends React.Component {
                         <a href="/docs/css/syntax/CssDataTypes">CSS Data Types
                         </a>
                       </li>
-                      <li className="dropdown-item">
-                        <a href="/docs/css/font/FontFamily">font-family
+
+                    </ul>
+                  </li>
+                  {/* #endregion Syntax Module 3 END */}
+
+                  {/* #region Values and Units Module Level 3 START */}
+                  <li className="dropdown-item dropdown" title="CSS Values and Units Module Level 3">
+                    <a className="dropdown-toggle" id="valueUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3 문법">
+                      Values and Units Level 3
+                    </a>
+                    <ul className="dropdown-menu" aria-labelledby="valueUnits">
+                      <li className="dropdown-item" title="값 정의 구문">
+                        <a href="/docs/css/valUnits/valDefSyntax">Value Definition SYNTAX
                         </a>
                       </li>
-                      <li className="dropdown-item">
-                        <a href="/docs/css/font/FontSize">font-size
+                      <li className="dropdown-item" title="문자형 데이터 형태">
+                        <a href="/docs/css/valUnits/">Textual Data Types
+                        </a>
+                      </li>
+                      <li className="dropdown-item" title="숫자형 데이터 형태">
+                        <a href="/docs/css/valUnits/">Numeric Data Types
+                        </a>
+                      </li>
+                      <li className="dropdown-item" title="거리(길이) 단위 데이터 형태">
+                        <a href="/docs/css/valUnits/">Distance Data Types(Length Units)
                         </a>
                       </li>
 
                     </ul>
                   </li>
-                  {/* #endregion font menu start */}
+                  {/* #endregion Values and Units Module Level 3 END */}
 
-                  {/* #region font menu start */}
+                  {/* #region Font Level 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="font" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Font Level 3">
                       Font Level 3
@@ -124,19 +143,23 @@ class Cheader extends React.Component {
                         <a href="/docs/css/font/FontSize">font-size
                         </a>
                       </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/font/FontWeight">font-weight
+                        </a>
+                      </li>
 
                     </ul>
                   </li>
-                  {/* #endregion font menu start */}
+                  {/* #endregion Font Level 3 END */}
 
 
 
-                  <li className="dropdown-item" disabled>
-                    <a href="/docs/css/font/Fonts" >font Property</a>
+                  <li className="dropdown-item">
+                    <a href="/docs/css/font/Fonts" disabled>font Property</a>
                   </li>
 
                   
-                  {/* #region font menu start */}
+                  {/* #region Font Level 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="textLevel3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Text Level 3">
                       Text Level 3
@@ -161,7 +184,7 @@ class Cheader extends React.Component {
 
                     </ul>
                   </li>
-                  {/* #endregion font menu start */}
+                  {/* #endregion Font Level 3 END */}
 
 
                 </ul>

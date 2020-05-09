@@ -1,16 +1,16 @@
 # DOM tree가 생성되는 과정 다이어 그램
 
 ```mermaid
-graph LR
+graph TB
         HTML[Load HTML]-->Parse[Parse HTML];
         Parse--HTML만 있을 때-->domTree[Create DOMtree];
         Parse-->CSS[Load CSS];
         CSS-->PCSS[Parse CSS];
-        PCSS-->domTree;
+        PCSS--Attatch as Property-->domTree;
         domTree-->Display;
         Parse-->JS[Load JavaScript];
         JS-->PJS[Parse JavaScript];
-        PJS-->domTree;
+        PJS--Attatch as Property-->domTree;
 
      classDef blue fill:#36c,stroke:#ccc,stroke-width:2px,color:white,font-family:verdana;
      classDef orange fill:#f63,stroke:#ccc,stroke-width:2px,color:white,font-family:verdana;

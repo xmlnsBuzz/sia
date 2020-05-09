@@ -93,6 +93,15 @@ class FontStyle_C extends React.Component {
                   <th>Media</th>
                   <td>visual</td>
                 </tr>
+                <tr>
+                  <th>Computed value:</th>
+                  <td>as specified</td>
+                </tr>
+                <tr>
+                  <th>Animatable:</th>
+                  <td>no</td>
+                </tr>
+
               </tbody>
             </table>
 
@@ -153,7 +162,7 @@ class FontStyle_C extends React.Component {
 `}</code></pre>
             <p className="lead"><span className="tag">section</span> element에 <span className="css-prop">font-style: italic</span>로 지정했을 경우 자식(child)인 <span className="tag">div</span> element는 물론, 자손(descendant)인 <span className="tag">p</span> element에게도 'italic'이라는 font-style를 물려주게 된다.</p>
             <p className="lead">CSS에는 font-style처럼 자식 및 자손들에게 자동적으로 상속되는 CSS property들이 꽤 많다. </p>
-            <h3 id="denyFontStyleInheritance">상속 거부와 'normal'값의 쓰임새</h3>
+            <h3 id="rejectFontStyleInheritance">상속거부와 'normal'값의 쓰임새</h3>
             <p className="lead">보다시피 상속은 CSS를 사용하는데 있어 매우 편리한 성질이다. 왜냐하면 화면에 표시되는 element 중 최상위 element인 <span className="tag">body</span>에 상속되는 CSS property를 지정하면 하위 element에 매번 같은 값을 따로 지정하지 않더라도 최하위 element까지 지정한 값이 상속되므로...  </p>
             <p className="lead">그러나 문서를 만들다 보면 상위에서 상속받은 값을 쓰면 안 될 경우가 반드시 생기게 마련인데, 이 때는 아래의 code처럼 상속을 거부하면 된다.</p>
           </div>
@@ -165,7 +174,7 @@ class FontStyle_C extends React.Component {
   </div>
 </section>
 `}</code></pre>
-          <p className="lead">내가 처음 CSS를 배울 때 'normal'이라는 값에 좀 의아함을 느꼈다. 왜냐하면 '그냥 가만히 있으면 normal인데 이 걸 어디에다 쓰지?' 라는 의문말이다. 그러다 '상속'이란 걸 배우고 나서야 '아! 이래서 normal을 만들었구나'하고 깨닫게 되었다.</p>
+          <p className="lead">내가 처음 CSS를 배울 때 'normal'이라는 값에 좀 의아함을 느꼈다. 왜냐하면 '그냥 가만히 있으면 normal인데 이 걸 어디에다 쓰지?' 라는 의문말이다. 그러다가 '상속'이란 걸 배우고 나서야 '아! 이래서 normal을 만들었구나'하고 깨닫게 되었다.</p>
           <p className="lead">위의 code에서 <span className="tag">p</span> 속의 <span className="tag">span</span>에도 부모인 <span className="tag">p</span>에 지정한 'normal' 값이 상속된다.</p>
           <h2 id="ReadCssTable_1">CSS Spec Table 읽는 방법 1</h2>
           <p className="lead"><a href="FontIntro">Font 개론</a>에서 예고한 것 처럼 CSS table 읽는 방법을 알아보자. 가장 간단한 <q>|</q>(single pipe) 부터 시작한다.</p>

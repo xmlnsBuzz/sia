@@ -1,5 +1,5 @@
 import React from 'react';
-// import FetchAPI from '../../../../components/FetchAPI';
+// import FetchAPI from '../../../../components/Post';
 import MyChannelVscodeUsageLink from '../../../../components/doc_comp/MyChannelVscodeUsageLink'
 
 class FontFamily_C extends React.Component {
@@ -20,7 +20,7 @@ class FontFamily_C extends React.Component {
             <p className="lead">글꼴의 출처란 '글꼴이 저장된 위치'를 말한다. CSS 초보자가 font를 사용할 때 흔히 다음과 같은 일이 생긴다.</p>
             <q className="block">어? 내 컴퓨터에서는 font가 잘 나타났는데, PC방에서는 왜 다르게 보이지?</q>
             <p className="lead">이 경우, 자신의 컴퓨터에만 설치된 글꼴을 사용했기 때문이다. Windows에 기본으로 깔리는 바탕, 돋움, 맑은고딕 등의 font-family를 지정했다면 이 글꼴은 windows 사용자라면 누구나 가지고 있으므로 제대로 보일 것이다. 하지만 대부분이 설치 않는 아주 독특한 글꼴을 자신의 컴퓨터에만 설치하고 그 글꼴을 CSS에 font-family로 지정했다면, 그 문서를 브라우저로 보는 다른 사람들에게 그 글꼴이 제대로 보일 리가 없다.</p>
-            {/* <FetchAPI /> */}
+           {/*  <FetchAPI /> */}
             <div className="normal-wrap">
               <h3 id="localFonts">Local fonts</h3>
               <p className="lead"> Local font란 자신의 컴퓨터에 설치된 font를 말한다. 위의 경우가 독특한 Local font(자신의 컴퓨터에 설치된 글꼴)를 사용했을 경우 벌어질 수 있는 상황이다. Windows의 경우 대개 'Windows/fonts' 폴더에 설치된 글꼴들을 말한다. 기본으로 설치되는 바탕체, 돋움체등을 비롯해 Photoshop 등과 같은 app에서 필요로 하는 font들이다.</p>
@@ -78,6 +78,15 @@ class FontFamily_C extends React.Component {
                   <th>Media</th>
                   <td>visual</td>
                 </tr>
+                <tr>
+                  <th>Computed value:</th>
+                  <td>as specified</td>
+                </tr>
+                <tr>
+                  <th>Animatable:</th>
+                  <td>no</td>
+                </tr>
+
               </tbody>
             </table>
             {/* NOTE google font extension 설치할 것 */}
@@ -156,12 +165,6 @@ class FontFamily_C extends React.Component {
               <p className="lead"></p>
               <p className="lead">하지만 대부분의 브라우저들이 거의 비슷한 CSS default values를 구현해 주므로 크게 신경쓰지 않아도 된다.</p>
             </div>
-            <ul className="check-all">
-              <li>font-weight: old;</li>
-              <li className="uncheck"></li>
-              <li></li>
-            </ul>
-
           </div>
         </section>
 

@@ -41,16 +41,16 @@ class DomTreeGeneratingProcess extends Component {
     
     } );
 
-    var graphDefinition = `graph LR
+    var graphDefinition = `graph TB
         HTML[Load HTML]-->Parse[Parse HTML];
-        Parse--HTML만 있을 때  -->domTree[Create DOMtree];
+        Parse--HTML만 있을 때-->domTree[Create DOMtree];
         Parse-->CSS[Load CSS];
         CSS-->PCSS[Parse CSS];
-        PCSS-->domTree;
-        domTree-->Paint;
+        PCSS--Attatch as Property-->domTree;
+        domTree-->Display;
         Parse-->JS[Load JavaScript];
         JS-->PJS[Parse JavaScript];
-        PJS-->domTree;`;
+        PJS--Attatch as Property-->domTree;`;
 
     mermaid.render( 'theGraph', graphDefinition, function ( svgCode ) {
       output.innerHTML = svgCode;

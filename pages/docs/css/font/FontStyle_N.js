@@ -35,11 +35,11 @@ class FontStyle_N extends React.Component {
                 <a className="nav-link js-scroll-trigger" href="#fontStyleInheritance">상속</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#denyFontStyleInheritance">상속 거부</a>
+                <a className="nav-link js-scroll-trigger" href="#rejectFontStyleInheritance">상속 거부</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#ReadCssTable_1">Spec 해독하기 <span style={{fontFamily: 'initial'}}>1</span></a>
+                <a className="nav-link js-scroll-trigger" href="#ReadCssTable_1">Spec 해독법 <span style={{fontFamily: 'initial'}}>1</span></a>
                 <ul>
                   <li className="nav-item">
                     <a className="nav-link js-scroll-trigger" href="#SinglePipe">Single Pipe</a>

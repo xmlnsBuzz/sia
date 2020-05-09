@@ -14,13 +14,20 @@ class FontSize_N extends React.Component {
           <nav className="collapse navbar-collapse text-left overflow-scroll">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about"></a>
+                <a className="nav-link js-scroll-trigger" href="#fontSizeValues">Values</a>
+                <ul>
+                  <a className="nav-link js-scroll-trigger" href="#fontSizeValueAbsolute">Absolute</a>
+                  <a className="nav-link js-scroll-trigger" href="#fontSizeValueRelative">Ralative</a>
+                </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services"></a>
+                <a className="nav-link js-scroll-trigger" href="#fontSizeInitialValue">Initial</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact"></a>
+                <a className="nav-link js-scroll-trigger" href="#fontSizePercentages">Percentages</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#fontSizeComputedValue">Computed value</a>
               </li>
             </ul>
           </nav>

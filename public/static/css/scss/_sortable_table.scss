@@ -1,8 +1,9 @@
 /* #region sorttable table */
-table.sortable {
+table.sortable, table.normal {
   border-collapse: collapse;
   font-family: $fira-sans-xcond;
   width: 100%;
+  empty-cells: show;
 
   caption {
     color: $success;
@@ -72,6 +73,10 @@ table.sortable {
       }
     }
   }
+}
+
+table.normal>thead>tr>th {
+  cursor: default;
 }
 
 /* #endregion sorttable table */
