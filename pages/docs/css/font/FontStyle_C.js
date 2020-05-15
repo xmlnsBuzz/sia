@@ -13,7 +13,7 @@ class FontStyle_C extends React.Component {
           <div className="normal-wrap">
 
             <h2 id="Styling">Styling</h2>
-            <p className="lead">'스타일링'이란 말이 있다. 흔히 자기 나름대로 머리에 멋을 부리는 것을 '헤어스타일링'이라 하는데, 생긴 그대로 normal하게 다니는 사람이 있는가 하면 빠마를 하는 사람, 무스로 스타일링하는 사람 등 뭔가 변화를 시도하는 사람도 있다. 아마도 인간이 가진 특성중 하나인 '변덕'과 남들보다 '돋보임'을 추구하려는 개성 때문이 아닐까 한다. </p>
+            <p className="lead">'스타일링'이란 말이 있다. 흔히 자기 나름대로 머리에 멋을 부리는 것을 '헤어스타일링'이라 하는데, 생긴 그대로 normal하게 다니는 사람이 있는가 하면 빠마를 하는 사람, 무스로 스타일링하는 사람 등 뭔가 변화를 시도하는 사람도 있다. 아마도 인간이 가진 특성중 하나인 '변덕'과 남보다 돋보이려는 '개성'때문이 아닐까 한다. </p>
 
             <h2 id="CssStyle">Style Sheet</h2>
             <p className="lead">CSS도 마찬가지다. 웹문서를 목적에 맞게 스타일링하는 것이다. 예를 들어 단순히 본인의 취향대로, 유행에 따라, 또는 의뢰인의 요구에 따라 CSS를 사용하여 웹문서를 스타일링하게 된다.</p>
@@ -150,8 +150,7 @@ class FontStyle_C extends React.Component {
           <div className="normal-wrap">
             <h3 id="fontStyleInheritance">Inheritance</h3>
             <p className="lead">CSS spec에는 'inherit'라는 값이 자주 나온다. Inherit는 '상속'이라는 뜻인데, 잘 알다시피 상속이란 '부모가 자식 또는 자손에게 대물림을 한다'는 의미다. CSS spec의 경우 아래와 같이 </p>
-            <pre><code>{`
-<section style="font-style: italic;">
+            <pre><code>{`<section style="font-style: italic;">
   <div>
     division marker
     <p>para 1</p>
@@ -178,27 +177,27 @@ class FontStyle_C extends React.Component {
           <p className="lead">위의 code에서 <span className="tag">p</span> 속의 <span className="tag">span</span>에도 부모인 <span className="tag">p</span>에 지정한 'normal' 값이 상속된다.</p>
           <h2 id="ReadCssTable_1">CSS Spec Table 읽는 방법 1</h2>
           <p className="lead"><a href="FontIntro">Font 개론</a>에서 예고한 것 처럼 CSS table 읽는 방법을 알아보자. 가장 간단한 <q>|</q>(single pipe) 부터 시작한다.</p>
-            <div className="normal-wrap">
-              <h3 id="SinglePipe">Single pipe : <q>|</q> (Only One of them)</h3>
-              <p className="lead">Single pipe는 자판의 enter key 위에 있는 원화표시 키의 uppercase이므로 Shift를 누르고 이 자판을 찍으면 된다.</p>
-              <p className="lead">Single Pipe는 CSS spec table에 정의된 가장 간단한 symbol 중 하나이다. 이 symbol의 의미는 <q>|</q>로 분리(seperate)된 값 중에서 오직 1개만을 사용하라는 것이다.</p>
-            </div>
-            <code className="success">font-family : normal | italic | obllique</code>
-            <p className="lead">이 기호는 '|' 로 구분된 값 중에 단 하나만 사용하라는 뜻이므로 아래 처럼 사용하면 안된다.</p>
-            <code className="bg-gray">
-              <ul className="uncheck-all">
-                <li>font-style : <span className="space">&nbsp;</span> ;  &nbsp;/* value가 비었다. */</li>
-                <li>font-style : normal oblique; /* 2개를 썼다. */</li>
-                <li>font-style : normal, oblique; /* 2개를 쓴데다 comma까지 찍었다.. */</li>
-              </ul></code>
-            <p className="lead">따라서 font-style 이라는 property 자체를 아예 사용하지 않거나, 사용하려면 아래처럼 사용해야 된다.</p>
-            <code className="bg-gray">
-              <ul className="check-all">
-                <li>font-style : noraml;</li>
-                <li>font-style : italic;</li>
-                <li>font-style : oblique;</li>
-              </ul>
-            </code>
+          <div className="normal-wrap">
+            <h3 id="fontStyleSinglePipe">Single pipe : <q>|</q> (Only One of them)</h3>
+            <p className="lead">Single pipe는 자판의 enter key 위에 있는 원화표시 키의 uppercase이므로 Shift를 누르고 이 자판을 찍으면 된다.</p>
+            <p className="lead">Single Pipe는 CSS spec table에 정의된 가장 간단한 symbol 중 하나이다. 이 symbol의 의미는 <q>|</q>로 분리(seperate)된 값 중에서 오직 1개만을 사용하라는 것이다.</p>
+          </div>
+          <code className="success">font-family : normal | italic | obllique</code>
+          <p className="lead">이 기호는 '|' 로 구분된 값 중에 단 하나만 사용하라는 뜻이므로 아래 처럼 사용하면 안된다.</p>
+          <code className="bg-gray">
+            <ul className="uncheck-all">
+              <li>font-style : <span className="space">&nbsp;</span> ;  &nbsp;/* value가 비었다. */</li>
+              <li>font-style : normal oblique; /* 2개를 썼다. */</li>
+              <li>font-style : normal, oblique; /* 2개를 쓴데다 comma까지 찍었다.. */</li>
+            </ul></code>
+          <p className="lead">따라서 font-style 이라는 property 자체를 아예 사용하지 않거나, 사용하려면 아래처럼 사용해야 된다.</p>
+          <code className="bg-gray">
+            <ul className="check-all">
+              <li>font-style : noraml;</li>
+              <li>font-style : italic;</li>
+              <li>font-style : oblique;</li>
+            </ul>
+          </code>
 
         </section>
 

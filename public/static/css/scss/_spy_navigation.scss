@@ -16,13 +16,17 @@ section#scrollSpy.scroll-spy {
   background-color: $gray-100;
   @include archi-border-main();
 
+
+  /* a[id=scrollSpy] {
+    content: attr(title) 'Top';
+  } */
   div.container {
     padding: 0;
 
     a.navbar-brand.js-scroll-trigger {
       font-family: $font-button-and-title-two;
       display: block;
-      background-color: $gray-300;
+      background-color: $gray-200;
       width: 100%;
       letter-spacing: 1px;
       font-weight: bold;

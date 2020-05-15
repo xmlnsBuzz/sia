@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>font shorthand property</title>
+  <meta charset="UTF-8" />
+  <style>
+    .shorthand {
+      font-family: serif;
+      font-size: 2em;
+      line-height: 1.5;
+      font-style: italic;
+      font-variant: small-caps;
+      font-weight: bold;
+      font-stretch: ultra-expanded;
+      font: 2em / 1.5 Verdana;
+    }
+    .props4 {
+      font-family: serif;
+      font-size: 2em;
+      line-height: 1.5;
+      font-style: italic;
+      font-variant: small-caps;
+      font-weight: bold;
+      font-stretch: ultra-expanded;
+      /* font-stretch는 현재 지원 브라우저가 없어서 안 먹힌다. */
+    }
+    
+
+    .sham {
+      font: 2em / 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="props4">of course</p><!-- 지정한대로 먹힌다. -->
+  <p class="shorthand">of course</p><!-- props4 class에 지정한 값을 shorthand class가 override -->
+  <p class="sham">of course</p><!-- font-family가 없으므로 parser가 sham class를 무시하여 브라우저 기본값 적용. -->
+  <p class="shorthand props4">
+    <!-- 1 -->
+    <span class="sham" style="color:red;">yes</span>
+    of course
+  </p>
+</body>
+
+</html>

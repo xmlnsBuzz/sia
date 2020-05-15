@@ -1,0 +1,8 @@
+ul.red > li {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+ul.green {
+  border: 1px solid #ddd;
+}

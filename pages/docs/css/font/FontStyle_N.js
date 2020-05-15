@@ -42,7 +42,7 @@ class FontStyle_N extends React.Component {
                 <a className="nav-link js-scroll-trigger" href="#ReadCssTable_1">Spec 해독법 <span style={{fontFamily: 'initial'}}>1</span></a>
                 <ul>
                   <li className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#SinglePipe">Single Pipe</a>
+                    <a className="nav-link js-scroll-trigger" href="#fontStyleSinglePipe">Single Pipe</a>
                   </li>
                 </ul>
 

@@ -16,7 +16,7 @@ class FontSize_C extends React.Component {
 
             <p className="lead">font-size property는 font의 크기를 지정한다. 지정할 수 있는 크기는 절대크기(absolut-size)와 상대크기(relative size) 그리고 길이단위(length-units)의 백분율이다.</p>
 
-            <table class="normal">
+            <table className="normal">
               <caption>W3C font-size Property</caption>
               <colgroup span="2">
                 <col span="1" />
@@ -249,6 +249,7 @@ class FontSize_C extends React.Component {
             <p className="lead">Computed value란 CSS parser의 계산에 의해  최종적으로 판결되는 값을 말한다. '판결'이라는 단어가 재판에 주로 쓰는 단어라 어색하겠지만, CSS의 첫 글자 'C'에 해당하는 단어인 'Cascading'{/* NOTE cascading 문서를 만들면 링크시킬 것. */}에 의해 우선순위가 가장 높은 값을 판단하여 결정하기 때문에 '판결'이 가장 가까운 단어일 것 같아서 사용한 것 이다.</p>
             <p className="lead">Cascading에 대해서는 따로 설명하기로 하고,여하튼 CSS parser는 최종값인 computed value를 결정하게 되는데,모니터 같은 visual media의 경우 길이나 크기의 computed value는 항상 <q>pixel</q>단위가 된다. <q>Pixel</q>이란 모니터 화소의 최소단위인데, 이 값이 종종 소수점 이하로 나오게 되고 W3C guideline에는 소수점 이하 나머지값은 버리도록 되어있는데...</p>
             <p className="lead">이게... 글쎄 브라우저에 따라 다르게 표현된다. 내 경우 브라우저는 크롬과 파이어폭스 두가지에서 테스트 하는데, 크롬은 무슨 수를 썼는지 소수점 이하값을 표현하는 듯 보이고, 파이어폭스는 잘라내는 것으로 나타났다. 정말이다... 궁금하면 아래의 코드를 브라우저에서 실행해 보도록 한다.</p>
+            <p className="lead">어쨌든 소수점 이하를 버린다 해도, 화면상에 표시되는 단위가 그렇다는 것이고, 소수점 이하 값 자체는 버리지 않는다. 예를 들어 19.2px라는 값이 모니터 상에 19px로 표현 되지만 이 값은 보존된다. 왜냐하면 이 값(19.2px)을 가진 element의 자손이 부모의 값의 80%를 font-size로 지정받았다면 19.2를 절사한 19의 80%가 아니라 19.2의 80%로 계산되기 때문이다.</p>
             <pre><code>{`<!DOCTYPE html>
 <html lang="en">
 

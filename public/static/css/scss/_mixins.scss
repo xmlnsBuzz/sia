@@ -22,7 +22,7 @@
 }
 
 @mixin archi-border() {
-  background-color: $gray-100;
+  // background-color: $gray-100;
   border: 8px solid $transparent;
   border-image: url('../../img/border-box-orange-main.png') 7 round;
   // box-shadow: 
@@ -61,23 +61,44 @@
   display: block;
 }
 
-@mixin color-list-marker($border, $border-shadow-color, $bgcolor) {
+@mixin basic-ordered-list() {
+  line-height: 1.8;
+  margin: 0.5em 0;
+}
+
+@mixin basic-ordered-list-item($bgcolor, $border-shadow-color, $color) {
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: $bgcolor;
+  color: $color;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50%;
+  margin: 1em 0;
+  margin-right: 1em;
+  
+  content: counter(list);
+  list-style-position: outside;
+}
+
+@mixin color-list-marker($border-color, $border-shadow-color, $bgcolor) {
   line-height: 1.8em;
   content: '';
   width: 0.5em;
   height: 0.5em;
-  border: 1px solid $border;
+  border: 1px solid $border-color;
   box-shadow: 2px 1px 4px $border-shadow-color;
   border-radius: 50%;
   display: inline-block;
-  background-color: $bgcolor;
+  background-color: $bgcolor !important;
   vertical-align: middle;
   margin-right: 0.5em;
   margin-bottom: 2px;
   list-style-position: outside;
 }
 
-@mixin arrow-marker($color, $weight){
+@mixin arrow-marker($color, $weight) {
   font-family: $awesome;
   color: $color;
   content: "\f105";
@@ -86,35 +107,46 @@
   margin-bottom: 2px;
 }
 
-@mixin list-item-check($list-icon-color, $list-content){
-      font-family: $awesome;
-      font-size: 0.7rem;
-      color: $list-icon-color;
-      content: $list-content;
-      // "\f00c";
-      font-weight: bold;
-      margin-right: 0.5rem;
+@mixin list-item-check($list-icon-color, $list-content) {
+  font-family: $awesome;
+  font-size: 0.7rem;
+  color: $list-icon-color;
+  content: $list-content;
+  // "\f00c";
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 
-@mixin list-item-uncheck($list-icon-color, $list-content){
-      font-family: $awesome;
-      font-size: 0.9rem;
-      color: $list-icon-color;
-      content: $list-content;
-      // "\f00c";
-      font-weight: bold;
-      margin-right: 0.5rem;
+@mixin list-item-uncheck($list-icon-color, $list-content) {
+  font-family: $awesome;
+  font-size: 0.9rem;
+  color: $list-icon-color;
+  content: $list-content;
+  // "\f00c";
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 
 @mixin text-shadow335($color) {
-text-shadow: 
-  3px 3px 5px $color,
-  3px -3px 5px $color,
-  -3px -3px 5px $color,
-  -3px 3px 5px $color;
+  text-shadow:
+    3px 3px 5px $color,
+    3px -3px 5px $color,
+    -3px -3px 5px $color,
+    -3px 3px 5px $color;
 }
 
 @mixin text-shadow335-simple($color) {
-text-shadow: 3px 3px 5px $color;
+  text-shadow: 3px 3px 5px $color;
 }
 
+@mixin box-shadow335($color) {
+  box-shadow:
+    3px 3px 5px $color,
+    3px -3px 5px $color,
+    -3px -3px 5px $color,
+    -3px 3px 5px $color;
+}
+
+@mixin box-shadow335-simple($color) {
+  box-shadow: 3px 3px 5px $color;
+}

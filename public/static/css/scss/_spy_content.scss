@@ -39,6 +39,7 @@ div#scrollContent.scroll-content {
   a:visited {
     color: $indigo;
   }
+
   .normal-wrap h4+p.lead {
     margin-top: 0;
   }
@@ -139,7 +140,7 @@ div#scrollContent.scroll-content {
       word-break: normal;
       display: block;
       margin: 1em 0;
-      font-weight: 300;
+      letter-spacing: 0.5px;
     }
 
     p.lead:first-of-type {
@@ -150,10 +151,17 @@ div#scrollContent.scroll-content {
       margin-bottom: 2em;
     }
 
+    .think {
+      background-color: $think;
+      padding: 1em;
+    }
+
     ul,
+    ol,
     li {
       font-size: 0.85rem;
     }
+
 
     ul.red {
       li {
@@ -296,4 +304,25 @@ span.space {
   border: 1px solid #cccccc;
 }
 
-/* #endregion scroll spy contents part */
+ol {
+  @include basic-ordered-list();
+
+  li {
+    counter-increment: list 1;
+    list-style-type: none;
+  }
+
+  li::before {
+    @include basic-ordered-list-item(#05a367, #ccc, #fff);
+    @include box-shadow335-simple($gray-300);
+  }
+}
+
+
+
+  // ul ol,
+  // ol li {
+  //   @include basic-ordered-list-item();
+  // }
+
+  /* #endregion scroll spy contents part */

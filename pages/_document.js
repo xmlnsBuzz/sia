@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/css/styles.css" />
         </Head>
         <body id="scrollSpy" className="scrollspy">
+          
           <Main />
           <NextScript />
           <script type="text/javascript" src="/static/js/jquery-3.4.1.slim.min.js"></script>

@@ -41,10 +41,10 @@ class FontFamily_N extends React.Component {
                     <a className="nav-link js-scroll-trigger" href="#fontFamilyValues">Values</a>
                     <ul>
                       <li>
-                    <a className="nav-link js-scroll-trigger" href="#fontFamilyName">font family</a>
-                    </li>
-                    <li>
-                    <a className="nav-link js-scroll-trigger" href="#genericFamilyName">generic Family</a>
+                        <a className="nav-link js-scroll-trigger" href="#fontFamilyName">font family</a>
+                      </li>
+                      <li>
+                        <a className="nav-link js-scroll-trigger" href="#genericFamilyName">generic Family</a>
                       </li>
                     </ul>
                   </li>
@@ -53,6 +53,25 @@ class FontFamily_N extends React.Component {
                   </li>
 
                 </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#ReadCssTable_2">Spec 해독법 2</a>
+                <ul>
+                  <li>
+                    <a className="nav-link js-scroll-trigger" href="#fontFamilyGroupingSymbol">Grouping</a>
+
+                    <li>
+                      <a className="nav-link js-scroll-trigger" href="#fontFamilyIterationSymbol">Iteration</a>
+                    </li>
+                    <li>
+                      <a className="nav-link js-scroll-trigger" href="#fontFamilySampleCode">Sample code</a>
+                    </li>
+                  </li>
+
+                </ul>
+                <li>
+                  <a className="nav-link js-scroll-trigger" href="#fontFamilyAlternativeFonts">Alternative Fonts</a>
+                </li>
               </li>
             </ul>
           </nav>

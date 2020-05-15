@@ -10,7 +10,7 @@ class FontFamily extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title>font-family property</title>
+          <title>font-family property - SIA Channel.</title>
         </Head>
         <Cheader />
 

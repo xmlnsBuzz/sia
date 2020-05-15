@@ -1,6 +1,26 @@
-// import React, { Component } from 'react';
 import fetch from 'node-fetch';
-// import { GetStaticProps } from 'next';
+
+export default class FetchAPI extends Component {
+
+  static async getInitialProps () {
+    const res = await fetch( 'https://api.github.com/users/bitfumes/repos' )
+    const data = await res.json()
+    return { repos: data }
+  }
+  render () {
+    return (
+      <div>
+        <ul>
+          {
+            this.props.repos.map( repo => (
+              <li>{repo.name}</li>
+            ) )
+          }
+        </ul>
+      </div>
+    )
+  }
+}
 
 /* class FetchAPI extends Component {
   constructor ( props ) {
@@ -17,40 +37,13 @@ import fetch from 'node-fetch';
       .then( json => {
         this.setState( {
           isLoaded: true,
-          posts: json
+          items: json
         } )
       } )
   }
- */
-
-function Post ( { posts } ) {
-  return (
-    <div>
-      <ul>
-        {posts.map( post => (
-          <li>
-            {post.email}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
 
 
-export async function getStaticProps () {
-  const res = await fetch( '/json/exercise.json' )
-  const posts = await res.json()
-
-  return {
-    props: {
-      posts,
-    },
-  }
-}
-
-
-/*   render () {
+  render () {
     var { isLoaded, items } = this.state;
     if ( !isLoaded ) {
       return <div>Loading...</div>;
@@ -100,6 +93,7 @@ export async function getStaticProps () {
       )
     }
   }
-} */
+}
 
-export default Post;
+export default FetchAPI;
+ */

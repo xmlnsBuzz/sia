@@ -10,7 +10,7 @@ class FontWeight extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>font-weight Property - SIA Channel.</title>
         </Head>
         <Cheader />
 

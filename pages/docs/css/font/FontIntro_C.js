@@ -37,11 +37,11 @@ class FontIntro_C extends React.Component {
               <p className="lead">가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로 : 세로 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
               <div className="normal-wrap">
                 <h3 id="intro_serifs">Serifs (명조체:明朝體)</h3>
-                <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Serif KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>明朝體</aside>가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로두께 : 세로두께 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
+                <p className="lead"><span className="alt-image-r float-right" style={{ fontFamily: 'Noto Serif KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>明朝體</span>가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로두께 : 세로두께 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
               </div>
               <div className="normal-wrap">
                 <h3 id="intro_sansSerifs">Sans Serifs (고딕체:Gothic)</h3>
-                <p className="lead"><aside className="alt-image-r float-right" style={{ fontFamily: 'Noto Sans KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>暗夕體</aside>각 획의 굵기가 일정한 글꼴이다. 대표적인 google font로는 Roboto, Open Sans, Lato, Monserrat 등의 영문폰트가 있고 한글은 Noto Sans Kr, Nanum Gothic 등이 있다. 윈도우 OS 글꼴 중 Arial, 돋움체 등이 여기에 해당된다.</p>
+                <p className="lead"><span className="alt-image-r float-right" style={{ fontFamily: 'Noto Sans KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>暗夕體</span>각 획의 굵기가 일정한 글꼴이다. 대표적인 google font로는 Roboto, Open Sans, Lato, Monserrat 등의 영문폰트가 있고 한글은 Noto Sans Kr, Nanum Gothic 등이 있다. 윈도우 OS 글꼴 중 Arial, 돋움체 등이 여기에 해당된다.</p>
                 <p className="lead">그 밖에 손으로 쓴 느낌의 필기체(cursive), coding에 주로 사용되는 고정폭(monospace or fixed-width), 어디에도 얽매이지 않고 틀에서 벗어난 '멋대로체'(display) 등이 있다.</p>
               </div>
               <h2 id="intro_fontStyle" className="clearfix">font-style : 글꼴의 기울기</h2>

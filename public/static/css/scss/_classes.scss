@@ -67,6 +67,45 @@
   font-size: 12px;
 }
 
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.yellow {
+color: $yellow;
+}
+
+.teal {
+color: $teal;
+}
+
+.indigo {
+  color: $indigo;
+}
+
+.purple {
+  color: $purple;
+}
+
+.pink {
+  color: $pink;
+}
+
+.brown {
+  color: $brown;
+}
+
 .bold {
   font-weight: 900;
 }
@@ -84,7 +123,8 @@ rt {
 }
 
 .emph {
-  color: $green;
+  color: $black;
+  font-weight: 500;
 }
 
 iframe {
@@ -116,9 +156,10 @@ iframe {
 }
 
 .tag {
-  color: $blue;
+  // color: $blue;
   font-family: $ibm-plex-mono;
-  font-size: 14px;
+  // font-size: 14px;
+  font-weight: 500;
 
 
   &::before {
@@ -135,15 +176,16 @@ iframe {
 .css-prop {
   color: $pink;
   font-family: $ibm-plex-mono;
-  font-size: 14px;
+  font-weight: 500;
+  // font-size: 14px;
 
   &::before {
-    content: '{';
+    content: ' {';
     margin-right: .1rem;
   }
 
   &::after {
-    content: '}';
+    content: ';} ';
     margin-left: .1rem;
   }
 }
