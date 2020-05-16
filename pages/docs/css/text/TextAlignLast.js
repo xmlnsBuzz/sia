@@ -1,27 +1,27 @@
 import React from 'react';
 import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
-import TextTransform_C from './TextTransform_C';
-import TextTransform_N from './TextTransform_N';
+import TextAlignLast_C from './TextAlignLast_C';
+import TextAlignLast_N from './TextAlignLast_N';
 import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
-class TextTransform extends React.Component {
+class TextAlignLast extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title>text-transform Property - {DocTitleAttach}</title>
+          <title>text-align-last Property - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 
         <main id={MainId} className={MainClass}>
           <div id={ScrollContentId} className={ScrollContentClass}>
             <div className={NormalWrapClass}>
-              <TextTransform_C />
+              <TextAlignLast_C />
             </div>
           </div>
           <section id={ScrollSpyId} className={ScrollSpyClass}>
-            <TextTransform_N />
+            <TextAlignLast_N />
           </section>
         </main>
       </React.Fragment>
@@ -29,4 +29,4 @@ class TextTransform extends React.Component {
   }
 }
 
-export default TextTransform;
+export default TextAlignLast;

@@ -38,7 +38,7 @@
 @mixin archi-border-main() {
   // background-color: $transparent;
   border: 9px solid $transparent;
-  border-image: url('../../img/border-box-27x27.png') 9 repeat;
+  border-image: url('../../img/border-box-27x27-pale-gray.png') 9 repeat;
 }
 
 @mixin archi-border-title() {
@@ -52,7 +52,6 @@
   border: 9px solid $transparent;
   border-image: url('../../img/border-image-green.png') 9 repeat;
 }
-
 /* list marker mixins */
 @mixin basic-list-item() {
   list-style-type: none;

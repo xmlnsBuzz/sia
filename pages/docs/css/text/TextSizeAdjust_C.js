@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Text_C extends React.Component {
+class TextSizeAdjust_C extends React.Component {
   render () {
     return (
       <React.Fragment>
         <div className="vspace2"></div>
         <div className="align-center">
-          <h1>Text 다루기</h1>
+          <h1></h1>
         </div>
         <section id="">
           <div className="normal-wrap">
@@ -32,4 +32,4 @@ class Text_C extends React.Component {
   }
 }
 
-export default Text_C;
+export default TextSizeAdjust_C;

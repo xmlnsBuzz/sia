@@ -1,16 +1,12 @@
 /* #region heading */
 
-h1, h2, h3, h4, h5, h6 {
-  color: $heading;
-}
+
 
 h1,
-h2,
-h3 {
-  font-weight: thin;
+h2 {
   display: inline-block;
   font-family: $fira-sans-xcond;
-  @include archi-border();
+  // @include archi-border();
 }
 
 h1 {
@@ -20,35 +16,45 @@ h1 {
   // text-align: center;
   font-weight: 500;
   font-size: 2em;
+  letter-spacing: 0.5px;
 }
 
 h2:first-of-type {
   margin-top: 1em;
-  
+
 }
 
 h2 {
   // font-weight: 500;
   // margin-top: $navbar_height - 2em;
-  font-size: 1.5em;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   // font-weight: 500;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   display: inline-block;
   font-family: $fira-sans-xcond;
 }
 
 
+h1,
+h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  color: $heading;
   margin: 1em 0;
+  margin-bottom: 0.2rem;
+  font-family: $fira-sans-xcond;
+  // font-style: oblique 30deg;
+
 }
 
 /* #endregion heading */

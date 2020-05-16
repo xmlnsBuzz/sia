@@ -55,6 +55,7 @@ div#scrollContent.scroll-content {
   div.align-center {
     align-content: center;
     display: flex;
+    text-align: center;
   }
 
   q::before {
@@ -131,7 +132,6 @@ div#scrollContent.scroll-content {
       margin-left: 1em;
     }
 
-    p,
     p.lead {
       font-size: 1rem;
       font-family: $main-para-font;
@@ -144,7 +144,14 @@ div#scrollContent.scroll-content {
     }
 
     p.lead:first-of-type {
-      margin-top: 0em;
+      margin: 0;
+    }
+
+    h2+p.lead,
+    h3+p.lead,
+    h4+p.lead,
+    h5+p.lead {
+      margin: 0em;
     }
 
     p.lead:last-of-type {
@@ -264,7 +271,7 @@ pre>code {
   font-family: $ibm-plex-mono;
   font-size: 0.8rem;
   // border-radius: 6px;
-  @include archi-border-code();
+  // @include archi-border-main();
 }
 
 .simple-code {
@@ -319,10 +326,9 @@ ol {
 }
 
 
+// ul ol,
+// ol li {
+//   @include basic-ordered-list-item();
+// }
 
-  // ul ol,
-  // ol li {
-  //   @include basic-ordered-list-item();
-  // }
-
-  /* #endregion scroll spy contents part */
+/* #endregion scroll spy contents part */

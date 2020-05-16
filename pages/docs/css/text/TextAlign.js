@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import TextAlign_C from './TextAlign_C';
 import TextAlign_N from './TextAlign_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class TextAlign extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>text align Property - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

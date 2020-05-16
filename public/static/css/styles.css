@@ -47,19 +47,10 @@ body {
 
 /* #endregion root and html, body */
 /* #region heading */
-h1, h2, h3, h4, h5, h6 {
-  color: #694f07;
-}
-
 h1,
-h2,
-h3 {
-  font-weight: thin;
+h2 {
   display: inline-block;
   font-family: "Fira Sans Extra Condensed";
-  border: 8px solid transparent;
-  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
-     border-image: url("../../img/border-box-orange-main.png") 7 round;
 }
 
 h1 {
@@ -68,6 +59,7 @@ h1 {
   margin: 0 auto;
   font-weight: 500;
   font-size: 2em;
+  letter-spacing: 0.5px;
 }
 
 h2:first-of-type {
@@ -75,23 +67,30 @@ h2:first-of-type {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   display: inline-block;
   font-family: "Fira Sans Extra Condensed";
 }
 
+h1,
+h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  color: #694f07;
   margin: 1em 0;
+  margin-bottom: 0.2rem;
+  font-family: "Fira Sans Extra Condensed";
 }
 
 /* #endregion heading */
@@ -321,8 +320,8 @@ div#scrollContent.scroll-content {
   padding-bottom: 500px;
   background-color: #fff;
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
-     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+  -o-border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
 }
 
 div#scrollContent.scroll-content a:link {
@@ -344,8 +343,8 @@ div#scrollContent.scroll-content .normal-wrap h4 + p.lead {
 
 div#scrollContent.scroll-content hr {
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
-     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+  -o-border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
   background-color: transparent;
   border-width: 0 5px 6px;
 }
@@ -356,6 +355,7 @@ div#scrollContent.scroll-content div.align-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
 }
 
 div#scrollContent.scroll-content q::before {
@@ -423,7 +423,6 @@ div#scrollContent.scroll-content section .normal-wrap .normal-wrap {
   margin-left: 1em;
 }
 
-div#scrollContent.scroll-content section p,
 div#scrollContent.scroll-content section p.lead {
   font-size: 1rem;
   font-family: "Noto Sans KR";
@@ -436,7 +435,14 @@ div#scrollContent.scroll-content section p.lead {
 }
 
 div#scrollContent.scroll-content section p.lead:first-of-type {
-  margin-top: 0em;
+  margin: 0;
+}
+
+div#scrollContent.scroll-content section h2 + p.lead,
+div#scrollContent.scroll-content section h3 + p.lead,
+div#scrollContent.scroll-content section h4 + p.lead,
+div#scrollContent.scroll-content section h5 + p.lead {
+  margin: 0em;
 }
 
 div#scrollContent.scroll-content section p.lead:last-of-type {
@@ -617,10 +623,6 @@ ul.uncheck-all li.check::before {
 pre > code {
   font-family: "Ibm Plex Mono";
   font-size: 0.8rem;
-  background-color: #f8f9fa;
-  border: 9px solid transparent;
-  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
-     border-image: url("../../img/border-image-green.png") 9 repeat;
 }
 
 .simple-code {
@@ -704,8 +706,8 @@ section#scrollSpy.scroll-spy {
   font-weight: bold;
   background-color: #f8f9fa;
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-box-27x27.png") 9 repeat;
-     border-image: url("../../img/border-box-27x27.png") 9 repeat;
+  -o-border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
   /* a[id=scrollSpy] {
     content: attr(title) 'Top';
   } */
@@ -723,9 +725,10 @@ section#scrollSpy.scroll-spy div.container a.navbar-brand.js-scroll-trigger {
   letter-spacing: 1px;
   font-weight: bold;
   letter-spacing: 2px;
-  border: 8px solid transparent;
-  -o-border-image: url("../../img/border-box-orange-main.png") 7 round;
-     border-image: url("../../img/border-box-orange-main.png") 7 round;
+  background-color: #f8f9fa;
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
+     border-image: url("../../img/border-image-green.png") 9 repeat;
 }
 
 section#scrollSpy.scroll-spy div.container > a {

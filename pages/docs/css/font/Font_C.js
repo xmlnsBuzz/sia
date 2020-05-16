@@ -247,7 +247,7 @@ class Font_C extends React.Component {
       font-stretch: ultra-expanded; 
     }
 `}</code></pre>          
-            <p className="lead">이 결과 속에는 'Cascading'의 원리가 들어있는데, 이 것은 W3C가 CSS spec을 design하는 대원칙이다. Cascading에 대해서는 다른 문서에서 따로 설명하기로 하고 위의 결과는 여러분들 각자 테스트해 보시기 바란다. 참고로</p>
+            <p className="lead">이 결과 속에는 'Cascading'의 원리가 들어있는데, 이 것은 W3C가 CSS spec을 design하는 대원칙이다. Cascading에 대해서는 다른 문서에서 따로 설명하기로 하고 위의 결과는 여러분들 각자 테스트해 보시기 바란다.</p>
             <p className="lead">이 문서를 마치려다 보니, 뭔가 미진한 부분이 많이 보이지만 이 사이트 'CSS Level 3' 메뉴를 진행하다보면 무수한 property table들을 만나게 될 것이므로 특별한 내용이 나타나면 그때 마다 유의점에 대해 별도로 설명하겠다.</p>
           </div>
         </section>

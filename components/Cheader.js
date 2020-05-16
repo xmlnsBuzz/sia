@@ -172,22 +172,51 @@ class Cheader extends React.Component {
                       <i className="fas fa-text-height text-danger"></i> Text Module 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="textLevel3">
-                      <li className="dropdown-item" title="CSS font Property 소개">
-                        <a href="/docs/css/font/FontIntro">Introduction to Text
+                      <li className="dropdown-item" title="CSS text Property 소개">
+                        <a href="/docs/css/text/TextIntro">Introduction to Text
                         </a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/font/FontStyle">font-style
+                        <a href="/docs/css/text/TextAlign">text-align
                         </a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/font/FontFamily">font-family
+                        <a href="/docs/css/text/TextAlignLast">text-align-last
                         </a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/font/FontSize">font-size
+                        <a href="/docs/css/text/TextJustify">text-justify
                         </a>
                       </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/TextSizeAdjust">text-size-adjust
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/TextIndent">text-indent
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/TextTransform">text-transform
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/LetterSpacing">letter-spacing
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/WhiteSpace">white-sapce
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/WordBreak">word-break
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/WordSpacing">word-spacing
+                        </a>
+                      </li>
+                      
 
                     </ul>
                   </li>

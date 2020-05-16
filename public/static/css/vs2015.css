@@ -8,10 +8,9 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background-color: #f8f9fa;
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
-     border-image: url("../../img/border-image-green.png") 9 repeat;
+  -o-border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
+     border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
   background: #e9ecef;
   color: #111111;
   font-weight: normal;

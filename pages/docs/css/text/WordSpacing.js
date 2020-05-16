@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import WordSpacing_C from './WordSpacing_C';
 import WordSpacing_N from './WordSpacing_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class WordSpacing extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>word-spacing Property - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

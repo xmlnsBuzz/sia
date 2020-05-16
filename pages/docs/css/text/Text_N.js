@@ -7,7 +7,7 @@ class Text_N extends React.Component {
         <div className="container text-center">
           <div className="bookmark-header">
              <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
-               
+               text handling
              </a>
            </div>
           <nav className="collapse navbar-collapse text-left overflow-scroll">

@@ -31,7 +31,7 @@ section#scrollSpy.scroll-spy {
       letter-spacing: 1px;
       font-weight: bold;
       letter-spacing: 2px;
-      @include archi-border();
+      @include archi-border-code();
     }
 
     >a {

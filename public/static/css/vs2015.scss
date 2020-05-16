@@ -8,7 +8,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  @include archi-border-code();
+  @include archi-border-main();
   background: $gray-200;
   color: #111111;
   font-weight: normal;

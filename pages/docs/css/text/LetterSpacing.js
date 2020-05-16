@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import LetterSpacing_C from './LetterSpacing_C';
 import LetterSpacing_N from './LetterSpacing_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class LetterSpacing extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title>letter-spacing Property </title>
+          <title>letter-spacing Property - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

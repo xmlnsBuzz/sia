@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import Text_C from './Text_C';
 import Text_N from './Text_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class Text extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title>text property</title>
+          <title>Text Handling - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

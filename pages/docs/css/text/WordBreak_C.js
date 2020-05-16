@@ -6,7 +6,7 @@ class WordBreak_C extends React.Component {
       <React.Fragment>
         <div className="vspace2"></div>
         <div className="align-center">
-          <h1></h1>
+          <h1>word-break Property</h1>
         </div>
         <section id="">
           <div className="normal-wrap">

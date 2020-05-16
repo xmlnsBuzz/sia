@@ -1,13 +1,13 @@
 import React from 'react';
 
-class WordBreak_N extends React.Component {
+class TextIntro_N extends React.Component {
   render () {
     return (
       <React.Fragment>
         <div className="container text-center">
           <div className="bookmark-header">
              <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
-               word-break
+               
              </a>
            </div>
           <nav className="collapse navbar-collapse text-left overflow-scroll">
@@ -29,4 +29,4 @@ class WordBreak_N extends React.Component {
   }
 }
 
-export default WordBreak_N;
+export default TextIntro_N;
