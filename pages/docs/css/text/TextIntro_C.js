@@ -6,7 +6,7 @@ class TextIntro_C extends React.Component {
       <React.Fragment>
         <div className="vspace2"></div>
         <div className="align-center">
-          <h1>text</h1>
+          <h1>Text - Type Setting(組版)</h1>
         </div>
         <section id="">
           <div className="normal-wrap">

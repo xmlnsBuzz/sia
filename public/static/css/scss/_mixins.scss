@@ -35,6 +35,13 @@
   border-image: url('../../img/h-divider-line.png') 1 round;
 }
 
+@mixin archi-hr() {
+  border: 9px solid $transparent;
+  border-image: url('../../img/hr-border-3.png') 9 round;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @mixin archi-border-main() {
   // background-color: $transparent;
   border: 9px solid $transparent;
@@ -52,6 +59,7 @@
   border: 9px solid $transparent;
   border-image: url('../../img/border-image-green.png') 9 repeat;
 }
+
 /* list marker mixins */
 @mixin basic-list-item() {
   list-style-type: none;
@@ -76,7 +84,7 @@
   border-radius: 50%;
   margin: 1em 0;
   margin-right: 1em;
-  
+
   content: counter(list);
   list-style-position: outside;
 }

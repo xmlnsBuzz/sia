@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import TextIntro_C from './TextIntro_C';
 import TextIntro_N from './TextIntro_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class TextIntro extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>Introduction to Text - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

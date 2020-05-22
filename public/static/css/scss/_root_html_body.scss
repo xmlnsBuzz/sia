@@ -32,4 +32,15 @@ body {
 .alt-image-l {
   font-size: 64px;
 }
+
+code>sup {
+  font-weight: bold;
+}
+
+code>sup::before {
+  color: $success;
+  content: ' *';
+  font-weight: bold;
+}
+
 /* #endregion root and html, body */

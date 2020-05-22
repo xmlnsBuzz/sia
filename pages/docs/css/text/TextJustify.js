@@ -3,14 +3,14 @@ import Head from 'next/head';
 import Cheader from '../../../../components/Cheader';
 import TextJustify_C from './TextJustify_C';
 import TextJustify_N from './TextJustify_N';
-import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass } from '../../DocsVariables';
+import { MainId, MainClass, ScrollContentId, ScrollContentClass, NormalWrapClass, ScrollSpyId, ScrollSpyClass, DocTitleAttach, BaseUrl } from '../../DocsVariables';
 
 class TextJustify extends React.Component {
   render () {
     return (
       <React.Fragment>
         <Head>
-          <title></title>
+          <title>text-justify Property - {DocTitleAttach}</title>
         </Head>
         <Cheader />
 

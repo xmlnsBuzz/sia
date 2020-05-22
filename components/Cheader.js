@@ -36,7 +36,7 @@ class Cheader extends React.Component {
 
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle disabled" id="html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fab fa-html5"></i>&nbsp;HTML</a>
-{/*                 <ul className="dropdown-menu" aria-labelledby="html">
+                {/*                 <ul className="dropdown-menu" aria-labelledby="html">
                   <li className="dropdown-item"><a href="#">Action 2 A</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 B</a></li>
                   <li className="dropdown-item"><a href="#">Action 2 C</a></li>
@@ -165,10 +165,10 @@ class Cheader extends React.Component {
                     <a href="/docs/css/font/Fonts" disabled>font Property</a>
                   </li> */}
 
-                  
+
                   {/* #region Font Level 3 start */}
                   <li className="dropdown-item dropdown">
-                    <a className="dropdown-toggle" id="textLevel3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Text Level 3">
+                    <a className="dropdown-toggle" id="textLevel3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Text Level 3 - 活字 組版 하기">
                       <i className="fas fa-text-height text-danger"></i> Text Module 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="textLevel3">
@@ -180,18 +180,18 @@ class Cheader extends React.Component {
                         <a href="/docs/css/text/TextAlign">text-align
                         </a>
                       </li>
-                      <li className="dropdown-item">
+                      {/*<li className="dropdown-item">
                         <a href="/docs/css/text/TextAlignLast">text-align-last
                         </a>
-                      </li>
+                      </li>*/}
                       <li className="dropdown-item">
                         <a href="/docs/css/text/TextJustify">text-justify
                         </a>
                       </li>
-                      <li className="dropdown-item">
+                      {/*<li className="dropdown-item">
                         <a href="/docs/css/text/TextSizeAdjust">text-size-adjust
                         </a>
-                      </li>
+                      </li>*/}
                       <li className="dropdown-item">
                         <a href="/docs/css/text/TextIndent">text-indent
                         </a>
@@ -205,7 +205,11 @@ class Cheader extends React.Component {
                         </a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/text/WhiteSpace">white-sapce
+                        <a href="/docs/css/text/WordSpacing">word-spacing
+                        </a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/Hyphens">hyphens
                         </a>
                       </li>
                       <li className="dropdown-item">
@@ -213,10 +217,14 @@ class Cheader extends React.Component {
                         </a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="/docs/css/text/WordSpacing">word-spacing
+                        <a href="/docs/css/text/OverflowWrap">overflow-wrap
                         </a>
                       </li>
-                      
+                      <li className="dropdown-item">
+                        <a href="/docs/css/text/WhiteSpace">white-sapce
+                        </a>
+                      </li>
+
 
                     </ul>
                   </li>

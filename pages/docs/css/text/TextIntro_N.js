@@ -6,9 +6,7 @@ class TextIntro_N extends React.Component {
       <React.Fragment>
         <div className="container text-center">
           <div className="bookmark-header">
-             <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
-               
-             </a>
+             <a className="navbar-brand js-scroll-trigger" href="#scrollSpy" style={{lineHeight: '1.8'}}>Type Settings</a>
            </div>
           <nav className="collapse navbar-collapse text-left overflow-scroll">
             <ul className="navbar-nav ml-auto">

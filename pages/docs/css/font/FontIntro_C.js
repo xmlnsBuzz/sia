@@ -10,10 +10,10 @@ class FontIntro_C extends React.Component {
           </div>
           <hr />
           <div className="normal-wrap">
-            <h2 id="intro_whatIsFonts">FONT 라는 단어의 뜻</h2>
+            <h2 id="intro_whatIsFonts">FONT(活字) 라는 단어의 뜻</h2>
             <p className="lead">Font는 글꼴, 글자체, 서체등으로도 불리우며 한글의 낱자, 알파벳(대소문자), 숫자, 기호 등이 모두 같은 느낌을 주는 인쇄활자  (<a href="https://fonts.google.com/specimen/Noto+Sans+KR">구글폰트 Noto Sans KR</a> 참조) 를 뜻한다. 각 글꼴(font family)은 그 글꼴을 구성하는 각 활자가 모두 통일된 모양(face), 굵기(weight), 장평(condensed or expanded), 장식(serif or sans-serif), 기울기(style)등을 유지한다. 즉, 앞에 나열한 것 중 한가지라도 다르다면 같은 글꼴(font)이 아니라는 말이다.</p>
 
-            <p className="lead">Font에 대한 정보를 찾고자 웹서핑을 하다보면 가끔 'Typeface'라는 말이 나온다. 이 단어는 주로 종이인쇄나 시각디자인을 전문으로 하는 사람들이 사용하는데, 하나의 페이지를 디자인하는데 사용되는 여러가지 글꼴들을 모두 포함하여 typeface라 부른다. 쉽게 말해 방탄소년단의 'Map of the soul 7' 앨범이 typeface라면 이 앨범에 포함된 'Persona'는 하나의 글꼴(font-family)인 셈이다. 하지만 이런 것들에 대한 구분없이 마구잡이로 만드는 웹문서에는 이런 구분이 별 의미없을지 모르겠다. </p>
+            <p className="lead">Font에 대한 정보를 찾고자 웹서핑을 하다보면 가끔 'Typeface'라는 말이 나온다. 이 단어는 주로 종이인쇄나 시각디자인을 전문으로 하는 사람들이 사용하는데, 하나의 페이지를 디자인하는데 사용되는 여러가지 글꼴들을 모두 포함하여 typeface라 부른다. 쉽게 말해 방탄소년단의 'Map of the soul 7' 앨범이 typeface라면 이 앨범에 포함된 'Persona'는 하나의 글꼴(font-family)인 셈이다. 하지만 이런 것들에 대한 구분없이 마구잡이로 만드는 웹문서에는 이런 구분이 별 의미없을 지 모르겠다. </p>
             <h2 id="intro_typography">Typography</h2>
             <p className="lead">그렇지만 이런 것들과 상관없이 시각디자인에서 사용하는 '<span className="emph">Typography</span>'라는 용어가 있다. 이 단어는 좁은 의미에서는 위의 typeface와 비슷하지만 <span className="emph">typography</span>는 글꼴 외에도 'image', 'icon' 등 여러가지 디자인적 요소를 포함한다는 점으로 구별할 수 있다. 우리가 개발하는 웹페이지도 '<span className="emph">typography</span>' 수준이 되도록 노력하면 좋겠다. 아래의 이미지는 '<span className="emph">typography</span>'의 중요성을 상기시켜주는 좋은 예이다.</p>
             <p className="lead">아카데미상 시상식에서 잘못된 typogrphy 덕분에 페이 더너웨이 아지매가 여우주연상을 'La la land'에게 수여하게 되는 해프닝이 벌어지는데, 그 때 사용된 typo card를 수정 전과 후로 본 것이다. 보다시피</p>

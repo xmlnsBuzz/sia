@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("../css/fontawesome.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,regular,500,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
@@ -45,6 +46,16 @@ body {
   font-size: 64px;
 }
 
+code > sup {
+  font-weight: bold;
+}
+
+code > sup::before {
+  color: #61af73;
+  content: ' *';
+  font-weight: bold;
+}
+
 /* #endregion root and html, body */
 /* #region heading */
 h1,
@@ -60,6 +71,10 @@ h1 {
   font-weight: 500;
   font-size: 2em;
   letter-spacing: 0.5px;
+  background-color: #f8f9fa;
+  border: 9px solid transparent;
+  -o-border-image: url("../../img/border-image-green.png") 9 repeat;
+     border-image: url("../../img/border-image-green.png") 9 repeat;
 }
 
 h2:first-of-type {
@@ -82,7 +97,10 @@ h4 {
 }
 
 h1,
-h2,
+h2 {
+  color: #694f07;
+}
+
 h3,
 h4,
 h5,
@@ -343,10 +361,11 @@ div#scrollContent.scroll-content .normal-wrap h4 + p.lead {
 
 div#scrollContent.scroll-content hr {
   border: 9px solid transparent;
-  -o-border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
-     border-image: url("../../img/border-box-27x27-pale-gray.png") 9 repeat;
+  -o-border-image: url("../../img/hr-border-3.png") 9 round;
+     border-image: url("../../img/hr-border-3.png") 9 round;
+  margin-top: 0;
+  padding-top: 0;
   background-color: transparent;
-  border-width: 0 5px 6px;
 }
 
 div#scrollContent.scroll-content div.align-center {
@@ -431,18 +450,13 @@ div#scrollContent.scroll-content section p.lead {
   word-break: normal;
   display: block;
   margin: 1em 0;
-  letter-spacing: 0.5px;
-}
-
-div#scrollContent.scroll-content section p.lead:first-of-type {
-  margin: 0;
 }
 
 div#scrollContent.scroll-content section h2 + p.lead,
 div#scrollContent.scroll-content section h3 + p.lead,
 div#scrollContent.scroll-content section h4 + p.lead,
 div#scrollContent.scroll-content section h5 + p.lead {
-  margin: 0em;
+  margin-top: 0em;
 }
 
 div#scrollContent.scroll-content section p.lead:last-of-type {
@@ -660,7 +674,7 @@ code.bg-gray ul {
   border-radius: 0.5rem;
 }
 
-span.space {
+.space {
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
@@ -935,6 +949,14 @@ table.normal > thead > tr > th {
   font-style: oblique 40deg;
 }
 
+.text-300 {
+  font-size: 300px;
+}
+
+.text-200 {
+  font-size: 200px;
+}
+
 .text-144 {
   font-size: 144px;
 }
@@ -967,6 +989,18 @@ table.normal > thead > tr > th {
   font-size: 24px;
 }
 
+.text-22 {
+  font-size: 22px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
 .text-1em {
   font-size: 1em;
 }
@@ -975,8 +1009,8 @@ table.normal > thead > tr > th {
   font-size: 16px;
 }
 
-.text-18 {
-  font-size: 18px;
+.text-14 {
+  font-size: 14px;
 }
 
 .text-12 {
@@ -1112,6 +1146,42 @@ iframe {
   margin-left: .1rem;
 }
 
+.gray-100 {
+  background-color: #f8f9fa;
+}
+
+.gray-200 {
+  background-color: #e9ecef;
+}
+
+.gray-300 {
+  background-color: #dee2e6;
+}
+
+.gray-400 {
+  background-color: #ced4da;
+}
+
+.gray-500 {
+  background-color: #adb5bd;
+}
+
+.gray-600 {
+  background-color: #6c757d;
+}
+
+.gray-700 {
+  background-color: #495057;
+}
+
+.gray-800 {
+  background-color: #343a40;
+}
+
+.gray-900 {
+  background-color: #212529;
+}
+
 /* #region Gantt Graph */
 #output {
   color: #0d54d8;
@@ -1128,6 +1198,7 @@ iframe {
 #theGraph span.edgeLabel {
   background-color: #f8f9fa;
   color: red;
+  background-position: 0 0;
 }
 
 #theGraph rect.label-container {

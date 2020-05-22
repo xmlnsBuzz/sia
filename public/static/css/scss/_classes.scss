@@ -19,6 +19,12 @@
   font-style: oblique 40deg;
 }
 
+.text-300 {
+  font-size: 300px;
+}
+.text-200 {
+  font-size: 200px;
+}
 .text-144 {
   font-size: 144px;
 }
@@ -50,6 +56,15 @@
 .text-24 {
   font-size: 24px;
 }
+.text-22 {
+  font-size: 22px;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-18 {
+  font-size: 18px;
+}
 
 .text-1em {
   font-size: 1em;
@@ -59,8 +74,8 @@
   font-size: 16px;
 }
 
-.text-18 {
-  font-size: 18px;
+.text-14 {
+  font-size: 14px;
 }
 
 .text-12 {
@@ -188,4 +203,32 @@ iframe {
     content: ';} ';
     margin-left: .1rem;
   }
+}
+
+.gray-100{
+  background-color: $gray-100;
+}
+.gray-200{
+  background-color: $gray-200;
+}
+.gray-300{
+  background-color: $gray-300;
+}
+.gray-400{
+  background-color: $gray-400;
+}
+.gray-500{
+  background-color: $gray-500;
+}
+.gray-600{
+  background-color: $gray-600;
+}
+.gray-700{
+  background-color: $gray-700;
+}
+.gray-800{
+  background-color: $gray-800;
+}
+.gray-900{
+  background-color: $gray-900;
 }
