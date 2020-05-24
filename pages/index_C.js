@@ -7,6 +7,7 @@ class index_C extends React.Component {
         <section>
           <h1 style={{ display: 'none' }}>FullStack </h1>
           <div className="relative">
+            {/*  style={{ width: '100vw', height: '100vh', backgroundColor: 'transparent', top: '0', left: '0', position: 'absolute', textAlign: 'center', backgroundImage: '/public/img/landing4.png', backgroundSize: 'cover', backgroundAttachment: 'fixed' }} */}
             <img className="landing" src="/img/landing4.png" width="100%" alt="landing" />
 {/*             <div>
               <button>Building</button>
@@ -29,17 +30,18 @@ class index_C extends React.Component {
           font-family: 'Cabin Sketch';
           font-weight: 700;
           font-size: 4vw;
-          color: #fff;
+          color: #ffffff;
           display: inline-block;
           text-shadow:
-          3px 3px 5px #f30,
-          3px -3px 5px #f30,
-          -3px -3px 5px #f30,
-          -3px 3px 5px #f30;
+          3px 3px 5px #f33,
+          3px -3px 5px #f33,
+          -3px -3px 5px #f33,
+          -3px 3px 5px #f33;
           
           position: relative;
-          {/* border: 1px solid blue; */}
         }
+
+
 
         .landing {
           z-index: -10;

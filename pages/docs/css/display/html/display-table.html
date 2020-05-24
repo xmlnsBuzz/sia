@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>display table</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <style>
+    .table {
+      /* display: table; */
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    .row {
+      /* display: table-row; */
+    }
+
+    .table-cell {
+      display: table-cell;
+      width: 200px;
+      height: 300px;
+      background-color: #96f;
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 auto;
+      border: 1px solid gray;
+    }
+
+    .overflow {
+      overflow: hidden;
+      height: auto;
+    }
+
+    .content {
+      display: inline-block;
+      width: 150px;
+      height: 100px;
+      background-color: #f39;
+    }
+
+    .normal {
+      width: 500px;
+      height: 300px;
+      border: 1px solid #9abe18;
+      margin: 0 auto;
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
+
+    .cont {
+      all:initial;
+      margin: 0 auto;
+      width: 150px;
+      height: 200px;
+      border: 1px solid #9abe18;
+      display: flex;
+      align-items: center;
+    }
+
+    .span {
+      background-color: yellow;
+      all: initial;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="table">
+    <div class="row">
+      <div class="table-cell">
+        <div class="content">
+          Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
+          ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+        </div>
+      </div>
+      <div class="table-cell">
+        <div class="content">
+          lorem
+        </div>
+      </div>
+      <div class="table-cell">
+        <div class="content">
+          lorem
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div class="normal">
+    <div class="cont span">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut fugit libero quae in possimus hic iusto facere,
+      quidem explicabo nisi atque aliquid odio, deserunt, quidem explicabo nisi atque aliquid odio, deserunt,
+quidem explicabo nisi atque aliquid odio, deserunt,
+quidem explicabo nisi atque aliquid odio, deserunt,
+quidem explicabo nisi atque aliquid odio, deserunt,
+quidem explicabo nisi atque aliquid odio, deserunt,
+
+
+    </div>
+    <div class="cont span">
+      <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quod?</span> 
+    </div>
+  </div>
+</body>
+
+</html>

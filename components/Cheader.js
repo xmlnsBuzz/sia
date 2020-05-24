@@ -101,19 +101,31 @@ class Cheader extends React.Component {
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="valueUnits">
                       <li className="dropdown-item" title="값 정의 구문">
-                        <a href="/docs/css/valUnits/valDefSyntax">Value Definition SYNTAX
+                        <a href="/docs/css/val-units/ValDefSyntax">Value Definition SYNTAX
                         </a>
                       </li>
                       <li className="dropdown-item" title="문자형 데이터 형태">
-                        <a href="/docs/css/valUnits/">Textual Data Types
+                        <a href="/docs/css/val-units/TextualDataTypes">Textual Data Types
                         </a>
                       </li>
                       <li className="dropdown-item" title="숫자형 데이터 형태">
-                        <a href="/docs/css/valUnits/">Numeric Data Types
+                        <a href="/docs/css/val-units/NumericDataTypes">Numeric Data Types
                         </a>
                       </li>
                       <li className="dropdown-item" title="거리(길이) 단위 데이터 형태">
-                        <a href="/docs/css/valUnits/">Distance Data Types(Length Units)
+                        <a href="/docs/css/val-units/DistanceDataTypes">Distance Data Types(Length Units)
+                        </a>
+                      </li>
+                      <li className="dropdown-item" title="기타 단위">
+                        <a href="/docs/css/val-units/OtherTypesOfUnits">Other Types of Units
+                        </a>
+                      </li>
+                      <li className="dropdown-item" title="Module 자체적으로 정의된 단위">
+                        <a href="/docs/css/val-units/DataTypesDefinedElseWhere">Data Types Defined ElseWhere
+                        </a>
+                      </li>
+                      <li className="dropdown-item" title="함수(수식 및 기능) 표기법">
+                        <a href="/docs/css/val-units/FunctionalNotations">Functional Notations
                         </a>
                       </li>
 

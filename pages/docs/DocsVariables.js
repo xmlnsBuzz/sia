@@ -6,7 +6,7 @@ export const NormalWrapClass = 'normal-wrap';
 export const ScrollSpyId = 'scrollSpy';
 export const ScrollSpyClass = 'scroll-spy';
 export const BaseUrl = 'http://localhost:3000';
-export const DocTitleAttach = 'FullStack SIA';
+export const DocTitleAttach = 'FullStack SIA\u2122';
 
 export default function DocsVariables () {
     return null;

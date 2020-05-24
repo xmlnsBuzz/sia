@@ -1,13 +1,14 @@
 import React from 'react';
-  
-class ValDefSyntax_C extends React.Component {
+
+class FunctionalNotations_C extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <div className="vspace2"></div>
+        <div className="align-center">
+          <h1>Functional Notations (수식 및 함수 표기법)</h1>
+        </div>
         <section id="">
-          <div className="align-center">
-            <h1>Value Defined Syntax</h1>
-          </div>
           <div className="normal-wrap">
             <hr />
             <h2></h2>
@@ -31,4 +32,4 @@ class ValDefSyntax_C extends React.Component {
   }
 }
 
-export default ValDefSyntax_C;
+export default FunctionalNotations_C;
