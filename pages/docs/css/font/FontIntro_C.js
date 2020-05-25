@@ -6,7 +6,7 @@ class FontIntro_C extends React.Component {
       <React.Fragment>
         <section id="Intro2Font">
           <div className="align-center">
-            <h1>Font Module Level 3</h1>
+            <h1>Font Module Level 3(活字)</h1>
           </div>
           <hr />
           <div className="normal-wrap">
