@@ -7,7 +7,7 @@ class SyntaxIntro_N extends React.Component {
         <div className="container text-center">
           <div className="bookmark-header">
              <a className="navbar-brand js-scroll-trigger" href="#scrollSpy">
-               
+               CSS Syntax L3
              </a>
            </div>
           <nav className="collapse navbar-collapse text-left overflow-scroll">

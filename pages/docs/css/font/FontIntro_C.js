@@ -31,13 +31,13 @@ class FontIntro_C extends React.Component {
           </div>
           <section id="intro_transformFonts" className="normal-wrap">
             <h2 id="intro_makeVariationFactorFace">FONT에 다양한 변화를 주는 font관련 property들</h2>
-            <p className="lead">앞에서 말한 모양, 굵기, 장평, 장식등, 글꼴에 변화를 주는 요소와 그 '이름'이 뭔지에 대해 알아보자.</p>
+            <p className="lead">앞에서 말한 모양, 굵기, 장평, 장식등, 글꼴에 변화를 주는 요소와 그 '이름'이 무엇인지 알아보자.</p>
             <div className="normal-wrap">
               <h3 id="intro_fontFace">font-family : 글꼴 이름</h3>
-              <p className="lead">가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로 : 세로 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
+              <p className="lead">가로 세로 획의 시작지점과 끝지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로 : 세로 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
               <div className="normal-wrap">
                 <h4 id="intro_serifs">Serifs (명조체:明朝體)</h4>
-                <p className="lead"><span className="alt-image-r float-right" style={{ fontFamily: 'Noto Serif KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>明朝體</span>가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로두께 : 세로두께 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 중 '바탕체'가 여기에 속한다.</p>
+                <p className="lead"><span className="alt-image-r float-right" style={{ fontFamily: 'Noto Serif KR', fontWeight: 'bold', backgroundColor: '#efefef' }}>明朝體</span>가로 세로 획의 시작 지점과 끝 지점 사이에 '굵기 변화' '뾰족한 장식' 등이 있는 글꼴. 명조체는 중국의 명나라 시대의 글씨체라는 뜻이지만 실제로는 이미 송나라 때 완성된 글씨체로 대략 가로두께 : 세로두께 = 1 : 4 인 한자체에서 유래되었다. 윈도우 OS 글꼴 '바탕체'다.</p>
               </div>
               <div className="normal-wrap">
                 <h4 id="intro_sansSerifs">Sans Serifs (고딕체:Gothic)</h4>

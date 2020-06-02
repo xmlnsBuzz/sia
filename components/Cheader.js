@@ -78,11 +78,11 @@ class Cheader extends React.Component {
                   {/* #region Syntax Module 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="syntax" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3 문법">
-                      <i className="fas fa-book-dead text-danger"></i> Syntax Module 3
+                      <i className="fas fa-book-dead text-danger"></i> Syntax Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="syntax">
                       <li className="dropdown-item" title="CSS font Property 소개">
-                        <a href="/docs/css/font/FontIntro">CSS SYNTAX
+                        <a href="/docs/css/syntax/SyntaxIntro">CSS SYNTAX
                         </a>
                       </li>
                       <li className="dropdown-item">
@@ -97,7 +97,7 @@ class Cheader extends React.Component {
                   {/* #region Values and Units Module Level 3 START */}
                   <li className="dropdown-item dropdown" title="CSS Values and Units Module Level 3">
                     <a className="dropdown-toggle" id="valueUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Level 3 문법">
-                      <i className="fas fa-pencil-ruler text-danger"></i> Values and Units Module 3
+                      <i className="fas fa-pencil-ruler text-danger"></i> Values and Units Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="valueUnits">
                       <li className="dropdown-item" title="값 정의 구문">
@@ -136,7 +136,7 @@ class Cheader extends React.Component {
                   {/* #region Font Level 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="font" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="CSS Font Level 3">
-                      <i className="fas fa-font text-danger"></i> Font Module 3
+                      <i className="fas fa-font text-danger"></i> Font Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="font">
                       <li className="dropdown-item" title="CSS font Property 소개">
@@ -181,7 +181,7 @@ class Cheader extends React.Component {
                   {/* #region Font Level 3 start */}
                   <li className="dropdown-item dropdown">
                     <a className="dropdown-toggle" id="textLevel3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Text Level 3 - 活字 組版 하기">
-                      <i className="fas fa-text-height text-danger"></i> Text Module 3
+                      <i className="fas fa-text-height text-danger"></i> Text Level 3
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="textLevel3">
                       <li className="dropdown-item" title="CSS text Property 소개">

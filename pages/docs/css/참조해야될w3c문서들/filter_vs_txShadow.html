@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>text shadow VS. filter: drop-shadow</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <style>
+    .tshadow {
+      text-shadow: 3px 3px 3px rgb(226, 93, 93);
+    }
+
+    .bshadow {
+      box-shadow: 3px 3px 3px rgb(226, 93, 93);
+      ;
+      ;
+      ;
+    }
+
+    .dshadow {
+      filter: drop-shadow(3px 3px 3px rgb(226, 93, 93));
+    }
+
+    .escape {
+      color: red;
+    }
+
+    .escape::before {
+      content: '\26 B';
+      display: inline;
+    }
+
+    li {
+      list-style-type: none;
+
+    }
+ul{
+  padding-left: 1em;
+}
+    li::before {
+      display: inline-block;
+      content: '\0026';
+    }
+    li li::before {
+      display: inline-block;
+      content: '\AC00';
+    }
+    li li li::before {
+      display: inline-block;
+      content: '\1100\1161';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tshadow" style="width: 200; height: 200;">▶</div>
+  <div class="bshadow" style="width: 200; height: 200;">▶</div>
+  <div class="bshadow tshadow" style="width: 200; height: 200;">▶</div>
+  <div class="dshadow" style="width: 200; height: 200;">▶</div>
+  <div class="escape">lorem5 &#x26;<strong>&#26;</strong></div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li>
+      <ul>
+        <li></li>
+        <li></li>
+        <li>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
